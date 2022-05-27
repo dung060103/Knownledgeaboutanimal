@@ -1,0 +1,306 @@
+body
+{
+    /* min-height: 150vh; */
+}
+a
+{
+    text-decoration: none;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    background-color: black;
+    width: 100vw;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+footer.hide
+{
+    display: none;
+}
+.ft_list_option .item_option a
+{
+    color:  white;
+
+
+}
+.ft_list_option .item_option
+{
+    transition: .5s;
+}
+.ft_list_option .item_option a::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    
+}
+.ft_list_icon_contact
+{
+    /* transform: translateX(-50%); */
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+/* .ft_list_icon_contact
+{
+    
+} */
+.icon_contact
+{
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease-in;
+    transform: scale(0.8);
+
+}
+.icon_contact:hover
+{
+    transform: scale(1);
+}
+.icon_contact:nth-child(1) :hover 
+{
+    color: red;
+}
+.icon_contact:nth-child(2) :hover 
+{
+    color: blue;
+}
+.icon_contact:nth-child(3) :hover 
+{
+    color: white;
+}
+/* .icon_contact:nth-child(3) :hover i
+{
+    color: white;
+    stroke-width: 5px;
+    stroke: black;
+} */
+.icon_contact:nth-child(4) :hover 
+{
+    color: pink;
+    
+}
+.icon_contact:nth-child(5) :hover 
+{
+    color: cyan;
+}
+.form_contact
+{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 10px;
+}
+.list_others_introduce
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.ft_logo
+{
+    margin: 10px 0;
+    transition: .4s;
+}
+.ft_logo img
+{
+    width: 100px;
+    height: 50px;
+}
+.icon_others_intro
+{
+    transition: .7s;
+}
+.icon_others_intro:hover
+{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.icon_others_intro, .content_others_intro
+{
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+}
+.item_others_intro
+{
+    display: flex;
+}
+.content_others_intro
+{
+    /* transform: scale(0); */
+    /* transform: translateX(-50%); */
+    transition-property: transform, opacity;
+    transition-duration: .7s;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    z-index: -1;
+}
+.content_others_intro.is-active
+{
+    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.btn_send
+{
+    cursor: pointer;
+}
+.text_gmail, .btn_send
+{
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+.ft_list_option
+{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+.ft_list_content
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ft_list_content .item_content 
+{
+    margin-left: 20px;
+}
+.ft_list_content .campaign_content
+{
+    flex: 1;
+
+}
+.list_campaign
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item_campaign a
+{
+    display: flex;
+    color: white;
+}
+.item_campaign a::before
+{
+    content: '+';
+    display: flex;
+    padding: 0 4px;
+}
+.item_campaign
+{
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.ft_list_content .item_content .title h3
+{
+    color: black;
+    background-color: #fff;
+    width: max-content;
+    padding: 2px;
+    font-family: 'Permanent Marker',cursive;
+    transition: .5s;
+    cursor: default;
+}
+.ft_list_content .short_introduce
+{
+    flex: 2.5 ;
+}
+.short_introduce .text
+{
+    color: white;
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.list_others_introduce
+{
+    margin: 10px 0;
+}
+.ft_logo:hover, .ft_list_option .item_option:hover
+{
+    transform: scale(1.4);
+}
+.ft_list_content .item_content .title h3:hover
+{
+    transform: scale(.9);
+}
+.item_campaign:hover
+{
+    transform: scale(.95);
+    
+}
+.item_campaign:hover a
+{
+    color: antiquewhite !important;
+}
+@media(max-width : 900px)
+{
+    .ft_list_content
+    {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .ft_list_icon_contact
+    {
+        width: 100vw;
+    }
+    .ft_list_content .item_content
+    {
+        align-self: center;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .item_campaign a::before
+{
+    display: none;
+}
+.item_campaign
+{
+    align-self: center;
+}
+.ft_list_content .item_content
+{
+    margin: 0;
+    width: 90vw;
+}
+.short_introduce .text
+{
+
+}
+}
+@media(max-width: 500px)
+{
+    .ft_list_option
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

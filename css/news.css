@@ -1,0 +1,694 @@
+content .content_size {
+    width: 100%;
+}
+
+
+content .content_size .small_content {
+    width: 80%;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+
+content .content_size .small_content .title_content {
+
+    height: 150px;
+    width: 100%;
+    background-image: url("https://thegioidongvat.co/wp-content/themes/boombox/images/category_bg.png");
+    border: 1px solid black;
+}
+
+content .content_size .small_content .title_content .titles {
+
+    
+    
+    text-align: center;
+    font-size: 50px;
+    text-transform: Permanent Marker;
+    /* text-transform: uppercase; */
+    font-family: monospace;
+}
+
+
+        /* Create table to manage content */
+
+
+        content .content_size .small_content .table_content {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        content .content_size .small_content .table_content .big_table {
+            width: 100%;
+            /* height: 100px; */
+            
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 {
+            width: 70%;
+            /* height: 90px; */
+            /* background-color: blanchedalmond; */
+            vertical-align: top;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 {
+            width: 100%;
+            
+            
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 {
+            width: 50%;
+            
+            /* background-color: blue; */
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 {
+            width: 50%;
+            vertical-align: top;
+            
+            /* background-color: rgb(0, 238, 255); */
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 .img_news {
+            width: 100%;
+            border-style: outset;
+            vertical-align: top;
+            translate: all 0.5s;
+        }
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 form {
+            margin-left: 10px;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 a {
+            font-size: 15px;
+            /* text-decoration: none; */
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+            font-family: monospace;
+            translate: all 0.5s;
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 h3 {
+            font-size: 30px;
+            color: black;
+            font-family: monospace;
+            translate: all 0.5s;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 p {
+            translate: all 0.5s;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+            font-family: monospace;
+        }
+
+        .columns70 .small_table1 .hover_tr:hover  {
+            transform: scale(1.1);
+            /* box-shadow: 0px 0px 20px orange, 0px 0px 15px rgb(255, 247, 0), 0px 0px 10px rgb(198, 253, 57); */
+            background-color: aliceblue;
+        }
+        
+
+
+
+
+
+
+
+
+
+        /*  */
+        content .content_size .small_content .table_content .big_table .columns30 {
+            width: 30%;
+            height: 100px;
+            /* background-color: rgb(228, 152, 38); */
+            vertical-align: top;
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_titles {
+            width: 100%;
+        }
+
+    
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_titles h3 {
+            font-size: 25px;
+            font-family: monospace;
+            color: black;
+            text-align: center;
+
+        }
+        
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .popular_search {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .popular_search p {
+            margin-left: 3px;
+            margin-right: 3px;
+            padding-left: 3px;
+            padding-right: 3px;
+            font-size: 20px;
+            font-family: monospace;
+            border: 1px solid black;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns30 .popular_search p:hover {
+            font-weight: bold;
+            box-shadow: 0px 0px 20px rgb(255, 213, 0), 0px 0px 15px yellow, 0px 0px 10px rgb(213, 253, 71) ;
+
+
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_trending {
+            width: 100%;
+            border-radius: 25px;
+            
+            
+        }
+
+        .sub_trending .link_top {
+            text-decoration: none;
+
+        }
+
+        
+
+        .sub_trending .link_top h2 {
+            color: black;
+            font-family: monospace;
+        }
+
+
+        .img_trending {
+            width: 100%;
+            border-style: outset;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .img_search_trending {
+            width: 100%;
+            
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS cho điện thoại và ipad */
+
+        @media only screen and (max-width: 415px) {
+
+                #web {
+                    width: 100%;
+                    height: 100vh;
+                }
+                
+                
+                content .content_size {
+                    width: 100%;
+                }
+                
+                
+                content .content_size .small_content {
+                    width: 80%;
+                    
+                    
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    
+                }
+                
+                
+                content .content_size .small_content .title_content {
+                
+                    height: 70px;
+                    width: 100%;
+                    background-image: url("https://thegioidongvat.co/wp-content/themes/boombox/images/category_bg.png");
+                    border: 1px solid black;
+                }
+                
+                content .content_size .small_content .title_content .titles {
+                
+                    
+                    
+                    text-align: center;
+                    font-size: 22px;
+                    text-transform: Permanent Marker;
+                    /* text-transform: uppercase; */
+                    font-family: monospace;
+                }
+                
+
+            /* Create table to manage content */
+
+
+            content .content_size .small_content .table_content {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            content .content_size .small_content .table_content .big_table,
+            .reponsive_tr, .columns70, .columns30
+            {
+                /* width: 100%; */
+                /* height: 100px; */
+            
+                display: block !important;
+                
+            }
+            
+            
+
+
+
+            content .content_size .small_content .table_content .big_table .columns70 {
+                width: 100%;
+                /* height: 90px; */
+                /* background-color: blanchedalmond; */
+                vertical-align: top;
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1,
+            .hover_tr, .columns1_smtb_50, .columns2_smtb_50
+            {
+                width: 100%;
+                display: block !important;
+                
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .hover_tr {
+                border-style: outset;
+                margin-bottom: 10px;
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 hr {
+                opacity: 0;
+            }
+
+
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 {
+                width: 100%;
+                
+                /* background-color: blue; */
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 {
+                width: 100%;
+                vertical-align: top;
+                
+                /* background-color: rgb(0, 238, 255); */
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 .img_news {
+                width: 98%;
+                
+                vertical-align: top;
+        
+            }
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 form {
+                margin-left: 10px;
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 a {
+                font-size: 15px;
+                /* text-decoration: none; */
+                font-weight: bold;
+                color: rgb(109, 109, 109);
+                font-family: monospace;
+                
+            }
+
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 h3 {
+                font-size: 22px;
+                color: black;
+                font-family: monospace;
+            }
+
+            content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 p {
+                
+                font-size: 15px;
+                font-weight: bold;
+                color: rgb(109, 109, 109);
+                font-family: monospace;
+            } 
+
+
+
+
+
+
+            /*  */
+            content .content_size .small_content .table_content .big_table .columns30 {
+                width: 100%;
+                height: max-content;
+                /* background-color: rgb(228, 152, 38); */
+                vertical-align: top;
+            }
+
+
+            content .content_size .small_content .table_content .big_table .columns30 .sub_titles {
+                width: 100%;
+            }
+
+        
+
+
+            content .content_size .small_content .table_content .big_table .columns30 .sub_titles h3 {
+                font-size: 25px;
+                font-family: monospace;
+                color: black;
+                text-align: center;
+
+            }
+            
+
+
+            content .content_size .small_content .table_content .big_table .columns30 .popular_search {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+            content .content_size .small_content .table_content .big_table .columns30 .popular_search p {
+                margin-left: 3px;
+                margin-right: 3px;
+                padding-left: 3px;
+                padding-right: 3px;
+                font-size: 15px;
+                font-family: monospace;
+                border: 1px solid black;
+            }
+
+        
+
+
+            content .content_size .small_content .table_content .big_table .columns30 .sub_trending {
+                width: 100%;
+                border-radius: 25px;
+                
+                
+            }
+
+            .sub_trending .link_top {
+                text-decoration: none;
+
+            }
+
+            
+
+            .sub_trending .link_top h2 {
+                color: black;
+                font-family: monospace;
+            }
+
+
+            .img_trending {
+                width: 100%;
+                border-style: outset;
+                margin-bottom: 20px;
+                overflow: hidden;
+            }
+
+            .img_search_trending {
+                width: 100%;
+                
+            }
+
+            
+        }
+
+
+
+        @media (min-width: 416px) and (max-width: 1024px) {
+
+            #web {
+                width: 100%;
+                height: 100vh;
+            }
+            
+            
+            content .content_size {
+                width: 100%;
+            }
+            
+            
+            content .content_size .small_content {
+                width: 80%;
+                
+                
+                margin-left: auto;
+                margin-right: auto;
+                
+                
+            }
+            
+            
+            content .content_size .small_content .title_content {
+            
+                height: 70px;
+                width: 100%;
+                background-image: url("https://thegioidongvat.co/wp-content/themes/boombox/images/category_bg.png");
+                border: 1px solid black;
+            }
+            
+            content .content_size .small_content .title_content .titles {
+            
+                
+                
+                text-align: center;
+                font-size: 22px;
+                text-transform: Permanent Marker;
+                /* text-transform: uppercase; */
+                font-family: monospace;
+            }
+            
+
+        /* Create table to manage content */
+
+
+        content .content_size .small_content .table_content {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        content .content_size .small_content .table_content .big_table,
+        .reponsive_tr, .columns70, .columns30
+         {
+            /* width: 100%; */
+            /* height: 100px; */
+           
+            display: block !important;
+            
+        }
+        
+        
+
+
+
+        content .content_size .small_content .table_content .big_table .columns70 {
+            width: 100%;
+            /* height: 90px; */
+            /* background-color: blanchedalmond; */
+            vertical-align: top;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1,
+        .hover_tr, .columns1_smtb_50, .columns2_smtb_50
+         {
+            width: 100%;
+            display: block !important;
+            
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .hover_tr {
+            border-style: outset;
+            margin-bottom: 10px;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 hr {
+            opacity: 0;
+        }
+
+
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 {
+            width: 100%;
+            
+            /* background-color: blue; */
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 {
+            width: 100%;
+            vertical-align: top;
+            
+            /* background-color: rgb(0, 238, 255); */
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns1_smtb_50 .img_news {
+            width: 98%;
+            
+            vertical-align: top;
+       
+        }
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 form {
+            margin-left: 10px;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 a {
+            font-size: 15px;
+            /* text-decoration: none; */
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+            font-family: monospace;
+            
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 h3 {
+            font-size: 22px;
+            color: black;
+            font-family: monospace;
+        }
+
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 p {
+            
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+            font-family: monospace;
+        } 
+
+
+
+
+
+
+         /*  */
+         content .content_size .small_content .table_content .big_table .columns30 {
+            width: 100%;
+            height: max-content;
+            /* background-color: rgb(228, 152, 38); */
+            vertical-align: top;
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_titles {
+            width: 100%;
+        }
+
+    
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_titles h3 {
+            font-size: 25px;
+            font-family: monospace;
+            color: black;
+            text-align: center;
+
+        }
+        
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .popular_search {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .popular_search p {
+            margin-left: 3px;
+            margin-right: 3px;
+            padding-left: 3px;
+            padding-right: 3px;
+            font-size: 15px;
+            font-family: monospace;
+            border: 1px solid black;
+        }
+
+    
+
+
+        content .content_size .small_content .table_content .big_table .columns30 .sub_trending {
+            width: 100%;
+            border-radius: 25px;
+            
+            
+        }
+
+        .sub_trending .link_top {
+            text-decoration: none;
+
+        }
+
+        
+
+        .sub_trending .link_top h2 {
+            color: black;
+            font-family: monospace;
+        }
+
+
+        .img_trending {
+            width: 100%;
+            border-style: outset;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .img_search_trending {
+            width: 100%;
+            
+        }
+
+        }
+        content .content_size .small_content .table_content .big_table .columns70 .small_table1 .columns2_smtb_50 a:hover
+        {
+            color: rgb(109, 109, 109) !important;
+        }
+        .popular_search p
+        {
+            margin: 10px;
+        }

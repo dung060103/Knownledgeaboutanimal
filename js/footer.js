@@ -1,0 +1,19 @@
+window.addEventListener('load',function()
+{
+    document.querySelector('.icon_phone').addEventListener('mouseenter',function()
+    {
+        document.querySelector('.number_phone').classList.add('is-active');
+    });
+    document.querySelector('.icon_phone').addEventListener('mouseleave',function()
+    {
+        document.querySelector('.number_phone.is-active').classList.remove('is-active');
+    });
+    document.querySelector('.icon_map').addEventListener('mouseenter',function()
+    {
+        document.querySelector('.text_map').classList.add('is-active');
+    });
+    document.querySelector('.icon_map').addEventListener('mouseleave',function()
+    {
+        document.querySelector('.text_map.is-active').classList.remove('is-active');
+    });
+})

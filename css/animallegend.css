@@ -1,0 +1,487 @@
+
+.title-intro{
+    text-align: center;
+    font-size: 20px;
+    /* margin: 20px auto; */
+   /* transform: scale(1.2); */
+    font-weight: 600;
+    margin-top: 150px;
+    margin-bottom: -20px;
+}
+.title-intro span{
+    transform: scale(1.1);
+    
+}
+/* .content
+{
+    margin-bottom: 20px;
+} */
+.title{
+    /* background: #000;s */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /* vertical-align: middle; */
+    /* border: 2px solid black; */
+    /* color: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% ); */
+}
+.title .chu{
+    width: 40%;
+    height: auto;
+    /* vertical-align: bottom; */
+    border: 4px solid black;
+    border-radius: 40px;
+    background: #f3f3f3 ;
+    /* transition: 1s; */
+    transform: translate3d(-70%, 67%, 0);
+    transition: 1s;
+}
+.animal-legend:hover .chu{
+    background: #000;
+    color: #f3f3f3;
+    transition: 1s;
+}
+.title .chu h2{
+    margin: 10px auto;
+    font-weight: 900;
+}
+
+ hr{
+    width: 70%;
+    height: 4px;
+    background: #000;
+}
+.tag{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.tag a{
+    font-size: 30px;
+    /* border-bottom: 2px ; */
+    margin-left: 20px;
+    
+}
+.tag a:hover{
+    /* text-decoration: none; */
+    color: #ffffff;
+    text-shadow: 0 0 10px #000;
+}
+
+#content .chu{
+    transform: translate3d(-70%, 67%, 0);
+    
+} 
+
+.container{
+    max-width: 100%;
+    /* margin: auto; */
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: -20px;
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    border: 5px solid #000;
+    background-image: url(/animallegenf/Picture/back1.jpg);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.animal{
+    /* height: auto; */
+    margin: 50px 10px 10px 60px;
+    padding: 22px;
+    width: 350px;
+    /* cursor: pointer; */
+    transition: 0.4s;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    background: #f3f3f3;
+}
+
+.animal img{
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.animal:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px #ffd900;
+    transition: 0.5s;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+
+}
+
+.animal .name{
+    padding: 10px 0;
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+}
+.animal .type a{
+    /* padding: 5px; */
+    margin: 5px 0;
+    /* color: #252525; */
+    text-decoration: none;
+    font-size: 18px;
+    color: silver;
+}
+
+
+.animal:hover .type a{
+    /* text-decoration: underline; */
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+.animal .about{
+    padding: 5px;
+    color: #252525;
+    font-size: 16px;
+    font-weight: 500;
+}
+.animal:hover .about{
+    /* font-weight: 900; */
+    transition: 0.5s;
+}
+.animal .buton{
+    margin-top: 20px;
+    transform: translateY(40px);
+    opacity: 0;
+}
+.animal:hover img{
+    box-shadow: 0 0 10px 3px rgb(255, 255, 38);
+    transition: 0.5s;
+
+}
+.animal .buton a{
+    
+    padding: 10px 10px 10px 10px;
+    border: 1px solid green;
+    color: #252525;
+    border-radius: 10px;    
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+.type i{
+    margin-right: 5px;
+}
+.animal:hover .buton{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.animal .country{
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+.animal .country i{
+    margin-right: 5px;
+}
+.animal:hover .country{
+    color: #ec0d0d;
+}
+
+.animal .buton a:hover{
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+
+    
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+    color: #ff0b0b;
+}
+.button{
+    text-align: center;
+}
+.home1 .button a{
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    text-decoration: none;
+    background: #000;
+    color: #f3f3f3;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* margin-top: -20px; */
+    transition: 1s ease-in-out;
+}
+.button a:hover{
+    background: none;
+    /* color: #000; */
+    transition: 0.5s ease-in-out;
+    border: 2px solid #ffffff;
+}
+
+@media(max-width:1400px){
+    .container .animal{
+    
+        margin: 30px auto !important;
+    }
+    
+}
+
+@media (max-width:900px){
+    .animal-legend .chu{
+        width: 50% !important;
+        transform: translate3d(0%,70%,0) !important;
+    }
+    #animal1{
+        margin: 10px auto;
+    }
+  
+}
+
+@media (max-width:600px){
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .animal-legend .chu{
+        width: 80% !important;
+        transform: translate3d(0%,70%,0) !important;
+    }
+    .container .animal{
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+        /* margin-left: 170px; */
+    }
+    #animal1{
+        margin: 10px auto;
+    }
+    #animal{
+        /* margin-left: 50px; */
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+/**************/
+
+
+.animal-macot{
+    margin-top: 50px;
+    /* border: 5px solid #000; */
+    border-radius: 10px;
+}
+
+.animal-macot .title .chu1{
+    border: 5px solid #000;
+    border-radius: 40px;
+    height: auto;
+    width: 20%;
+    margin: 0 auto;
+    background: #f3f3f3;
+    transform: translate3d(140%,70%,0);
+    transition: 1s;
+}
+.animal-macot .title .chu1 h2{
+    margin: 10px auto;
+}
+.animal-macot:hover .title .chu1{
+    background: #000000;
+    color: #ffffff;
+    transition: 1s;
+}
+.animal-macot .container{
+    background-image: url(/animallegenf/Picture/back2.jpg);
+}
+.card{
+    position: relative;
+    width: calc(90% - 50px);
+    min-height: 500px;
+    background: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px #000;
+    margin-top: 70px;
+}
+.card .imgBx{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card:hover .imgBx{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: 0.24s ease-in;
+}
+.card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .detail{
+    /* transform: translate(0);  */
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+.card .detail{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* transform: translateY(-200px); */
+    transition: 0.1s ease-in;
+   
+}
+
+
+.card a{
+    text-decoration: none;       
+}
+.card .detail .cont{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 80%;
+    /* box-shadow: 0 0 5px 0px #252525; */
+}
+.card .detail .cont h2{
+    color: green;
+}
+
+.card .detail .cont .lala .lala-country{
+    color: #ec0d0d;
+    font-size: larger;
+    margin-top:-10px;
+}
+.card .detail .cont .lala .type a{
+    color: brown ;
+    font-size: 20px;
+    /* margin-top: 5px; */
+}
+.card .detail .cont .lala .type{
+    margin-top: 10px;
+}
+
+.card .detail .cont .lala .weight i{
+    /* margin-left: 10px;    */
+    font-size: 20px;
+    margin-right: 5px;
+}
+.card .detail .cont .lala .weight{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.card .detail .cont .lala h4{
+    font-size: 16px;
+}
+
+.card .detail .cont .btn2{
+    margin-top: 50px;
+}
+
+.card .detail .cont .btn2 a{
+    
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #000;
+    color: black;
+    transition: 1s;
+    font-size: 18px;
+    /* margin-top: 20px; */
+}
+.card .detail .cont .btn2 a:hover{
+    color: #f3f3f3;
+    background: #000;
+    transition: 1s;
+}
+
+
+@media (max-width:1200px){
+    .container{
+      width: 100%;
+      /* height: 600px; */
+    }
+    .animal-macot .chu1{
+        width: 70% !important;
+        transform: translate3d(0%, 70%, 0) !important;
+    }
+
+}   
+@media (max-width:990px){
+  .card{
+      width: calc(70% - 20px);
+      margin: 10px auto;
+  }
+}
+
+@media (max-width:840px){
+  .card{
+      width: calc(80% - 20px);
+      margin: 10px auto;
+      height: 200px;
+  }
+  .card:hover{
+      height: 650px;
+      transition: 0.1s ease-in;
+  }
+  .card .imgBx{
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  .card .imgBx img{
+    /* position: relative; */
+    width: 100%;
+    /* height: 300px; */
+}
+  .card:hover .imgBx{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+  .card .detail{
+      position: relative;
+      width: 100%;
+      height: 260px;
+  }
+}
+
+@media (max-width:480px){
+  .card{
+      width: calc(100% - 20px);
+      margin: 10px auto;
+  }
+}
