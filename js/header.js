@@ -5,7 +5,66 @@ window.addEventListener('load',function ()
     var new_imgLOGO=document.createElement('img');
     new_imgLOGO.src="images/LOGO/logoweb.png";
     new_imgLOGO.style.display='none';
+    var div_login = this.document.createElement('div');
+    div_login.id='content';
+div_login.innerHTML=
+`
+<div id="container" class="animate__backInDown">
+                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
+                <form action="" class="sign-in" id="signin" align="center">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a id="sign-up-btn2" onclick="opensignoutclosesignin()" style="font-weight: 800;">Sign up</a></p>
+                </form>
 
+                <form action="" class="sign-up" id="signup" align="center">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" placeholder="Phone">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btn">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                    <p class="account-text">Already have an account? <a  id="sign-in-btn2" onclick="opensigninclosesignout()" style="font-weight: 800;">Sign in</a></p>
+                </form>
+            </div>
+`
+
+
+    document.querySelector('content').appendChild(div_login);
     this.document.querySelector('.container_logo_brand').appendChild(new_imgLOGO);
         var btn_close =document.querySelector('.item_Search_Animals .container_search .btn_search_close');
     if(btn_close!=null)

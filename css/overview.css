@@ -1,0 +1,1036 @@
+
+body {
+    background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+
+#web {
+    width: 100% !important;
+    width: 100vh;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+}
+
+#web h1 {
+    font-size: 50px;
+    text-indent: 30px;
+}
+
+.banner {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    height: 120px;
+
+    background-image: url("https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    border: 1px solid black;
+
+    vertical-align: middle;
+
+    z-index: 10;
+
+
+}
+
+.titles {
+    text-align: center;
+    font-size: 70px;
+    /* text-transform: Permanent Marker; */
+
+    font-family: 'Permanent Marker', cursive;
+
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(2, 203, 2), 0px 0px 20px rgb(25, 236, 25);
+
+    margin: 1% auto;
+    
+    transform: 0.5s all;
+
+    animation: animate 2s linear infinite;
+
+
+}
+
+@keyframes animate {
+    0% {
+        text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(2, 203, 2), 0px 0px 20px rgb(25, 236, 25);
+
+    }
+    25% {
+        text-shadow: 0px 0px 20px rgb(11, 220, 11), 0px 0px 20px rgb(78, 243, 78), 0px 0px 20px rgb(165, 255, 165);
+
+    }
+    50% {
+        text-shadow: 0px 0px 20px rgb(6, 243, 6), 0px 0px 20px rgb(17, 253, 111), 0px 0px 20px rgb(11, 240, 225);
+
+    }
+    75% {
+        text-shadow: 0px 0px 20px rgb(10, 66, 234), 0px 0px 20px rgb(19, 255, 212), 0px 0px 20px rgb(0, 245, 0);
+
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgb(7, 237, 7), 0px 0px 20px rgb(122, 252, 15), 0px 0px 20px rgb(225, 255, 0);
+
+    }
+
+}
+
+
+
+
+
+.content {
+
+    margin-top: 50px;
+    width: 80% !important;
+    width: 100vh;
+    background-color: rgba(255, 255, 255, 0.797);
+
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.content p{
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: monospace;
+    text-indent: 30px;
+}
+
+.img-middle-p {
+
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+
+   
+
+
+}
+
+.img-middle-p img {
+    width: 100%;
+}
+
+
+.content2 {
+
+    margin-top: 50px;
+    width: 80% !important;
+    width: 100vh;
+    /* background-color: rgba(13, 251, 251, 0.797); */
+
+    /* background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7)); */
+
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.content2 table
+{
+    
+    border-spacing: 10px;
+}
+
+
+.content2 p {
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: monospace;
+
+    text-indent: 30px;
+
+}
+
+
+.content2 .cot1 {
+    width: 60%;
+    background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+}
+
+.content2 .cot1 img {
+    width: 100%;
+    
+}
+
+.content2 .cot2 {
+    width: 40%;
+    background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+}
+
+.content2 .hang2 {
+    background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+}
+
+
+
+.content3 {
+
+    margin-top: 50px;
+    width: 80% !important;
+    width: 100vh;
+    /* background-color: rgba(13, 251, 251, 0.797); */
+
+    /* background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7)); */
+
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.content3 .bang1 {
+    width: 100%;
+    height: 500px;
+    border-spacing:  0px;
+
+}
+
+.content3 .bang1 .hang1 .cot1 {
+    width: 30%;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 255, 0.802), rgba(255, 255, 255, 0.795));
+
+    text-align: center;
+    
+}
+
+.content3 .bang1 .hang1 .cot1 .p {
+
+    margin: 0 auto;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 200px;
+
+    
+
+}
+
+
+.content3 .bang1 .hang2 .cot1 {
+    width: 30%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.786);
+    text-align: center;
+}
+
+.content3 .bang1 .hang2 .cot1 .p {
+
+    margin: 0 auto;
+    color: rgba(0, 0, 255, 0.802);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+
+    
+
+}
+
+
+
+
+.content3 .bang1 .hang1 .cot2 {
+    width: 70%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.786);
+    overflow: hidden;
+}
+
+.content3 .bang1 .hang1 .cot2 img {
+
+    width: 100%;
+    
+
+}
+
+
+
+
+.content3 .bang1 .hang2 .cot2 {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.786);
+
+}
+
+.content3 .bang1 .hang2 .cot2 .p {
+
+    margin: 0 auto;
+    color: rgba(0, 0, 255);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.content3 .bang2 {
+
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    border-spacing:  0px;
+
+}
+
+.content3 .bang2 .hang1 .cot1 {
+    width: 30%;
+    height: 300px;
+    background: linear-gradient(rgba(255, 0, 0, 0.802), rgba(255, 255, 255, 0.795));
+
+    text-align: center;
+    
+}
+
+.content3 .bang2 .hang1 .cot1 .p {
+
+    margin: 0 auto;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 200px;
+
+    
+
+}
+
+
+.content3 .bang2 .hang2 .cot1 {
+    width: 30%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.786);
+    text-align: center;
+}
+
+.content3 .bang2 .hang2 .cot1 .p {
+
+    margin: 0 auto;
+    color: rgba(255, 0, 0, 0.802);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+
+    
+
+}
+
+
+
+
+.content3 .bang2 .hang1 .cot2 {
+    width: 70%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.786);
+    overflow: hidden;
+}
+
+.content3 .bang2 .hang1 .cot2 img {
+
+    width: 100%;
+    
+
+}
+
+
+
+
+.content3 .bang2 .hang2 .cot2 {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.786);
+
+}
+
+.content3 .bang2 .hang2 .cot2 .p {
+
+    margin: 0 auto;
+    color: rgb(255, 0, 0);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content3 .bang3 {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    border-spacing:  0px;
+
+}
+
+.content3 .bang3 .hang1 .cot1 {
+    width: 30%;
+    height: 300px;
+    background: linear-gradient(rgba(255, 255, 0, 0.802), rgba(0, 0, 0, 0.786));
+
+    text-align: center;
+    
+}
+
+.content3 .bang3 .hang1 .cot1 .p {
+
+    margin: 0 auto;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 200px;
+
+    
+
+}
+
+
+.content3 .bang3 .hang2 .cot1 {
+    width: 30%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.786);
+    text-align: center;
+}
+
+.content3 .bang3 .hang2 .cot1 .p {
+
+    margin: 0 auto;
+    color: rgba(255, 255, 0, 0.802);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+
+    
+
+}
+
+
+
+
+.content3 .bang3 .hang1 .cot2 {
+    width: 70%;
+    height: 300px;
+    background-color: rgba(26, 26, 26, 0.786);
+    overflow: hidden;
+}
+
+.content3 .bang3 .hang1 .cot2 img {
+
+    width: 100%;
+    
+
+}
+
+
+
+
+.content3 .bang3 .hang2 .cot2 {
+    width: 70%;
+    background-color: rgba(6, 6, 6, 0.786);
+
+}
+
+.content3 .bang3 .hang2 .cot2 .p {
+
+    margin: 0 auto;
+    color: rgba(255, 255, 0);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 415px) {
+
+
+
+
+    #web {
+        width: 100% !important;
+        width: 100vh;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    #web h1 {
+        font-size: 50px;
+        text-indent: 30px;
+    }
+    
+    .banner {
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        width: 100%;
+        height: 100px;
+    
+        background-image: url("https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        border: 1px solid black;
+    
+        vertical-align: middle;
+    
+        z-index: 10;
+    
+    
+    }
+    
+    .titles {
+        text-align: center;
+        
+        font-size: 50px;
+        /* text-transform: Permanent Marker; */
+    
+        font-family: 'Permanent Marker', cursive;
+    
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(2, 203, 2), 0px 0px 20px rgb(25, 236, 25);
+    
+        margin: 1% auto;
+        
+        transform: 0.5s all;
+    
+        animation: animate 2s linear infinite;
+    
+    
+    }
+    
+    @keyframes animate {
+        0% {
+            text-shadow: 0px 0px 20px green, 0px 0px 20px rgb(2, 203, 2), 0px 0px 20px rgb(25, 236, 25);
+    
+        }
+        25% {
+            text-shadow: 0px 0px 20px rgb(11, 220, 11), 0px 0px 20px rgb(78, 243, 78), 0px 0px 20px rgb(165, 255, 165);
+    
+        }
+        50% {
+            text-shadow: 0px 0px 20px rgb(6, 243, 6), 0px 0px 20px rgb(17, 253, 111), 0px 0px 20px rgb(11, 240, 225);
+    
+        }
+        75% {
+            text-shadow: 0px 0px 20px rgb(10, 66, 234), 0px 0px 20px rgb(19, 255, 212), 0px 0px 20px rgb(0, 245, 0);
+    
+        }
+        100% {
+            text-shadow: 0px 0px 20px rgb(7, 237, 7), 0px 0px 20px rgb(122, 252, 15), 0px 0px 20px rgb(225, 255, 0);
+    
+        }
+    
+    }
+    
+    
+    
+    
+    
+    .content {
+    
+        margin-top: 50px;
+        width: 100% !important;
+        width: 100vh;
+        background-color: rgba(255, 255, 255, 0.797);
+    
+        border: 1px solid black;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    }
+    
+    
+    .content p{
+        font-size: 18px;
+        margin-left: 10px;
+        font-family: monospace;
+        text-indent: 30px;
+    }
+    
+    .img-middle-p {
+    
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    
+       
+    
+    
+    }
+    
+    .img-middle-p img {
+        width: 100%;
+    }
+    
+    
+    .content2 {
+    
+        margin-top: 50px;
+        width: 100% !important;
+        width: 100vh;
+        /* background-color: rgba(13, 251, 251, 0.797); */
+    
+        /* background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7)); */
+    
+        border: 1px solid black;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    }
+    .content2 table, .cot1, .cot2, .hang1 {
+        display: block !important;
+    }
+    
+    .content2 table
+    {
+        
+        border-spacing: 10px;
+    }
+    .content2 h1 {
+        text-align: center;
+    }
+    
+    .content2 p {
+        font-size: 18px;
+        margin-left: 10px;
+        font-family: monospace;
+    
+        text-indent: 30px;
+    
+    }
+    
+    
+    .content2 .cot1 {
+        width: 100%;
+        background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+    }
+    
+    .content2 .cot1 img {
+        width: 100%;
+        
+    }
+    
+    .content2 .cot2 {
+        width: 100%;
+        background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+    }
+    
+    .content2 .hang2 {
+        background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7));
+    }
+    
+    
+    
+    .content3 {
+    
+        margin-top: 50px;
+        width: 100% !important;
+        width: 100vh;
+        /* background-color: rgba(13, 251, 251, 0.797); */
+    
+        /* background: linear-gradient(rgb(84, 236, 84, 0.7), rgb(124, 244, 124, 0.7), rgb(207, 249, 207, 0.7)); */
+    
+        border: 1px solid black;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .content3 .bang1 {
+        width: 100%;
+        height: 500px;
+        border-spacing:  0px;
+    
+    }
+    
+    .content3 .bang1 .hang1 .cot1 {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(0, 0, 255, 0.802), rgba(255, 255, 255, 0.795));
+    
+        text-align: center;
+        
+    }
+    
+    .content3 .bang1 .hang1 .cot1 .p {
+    
+        margin: 0 auto;
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 200px;
+    
+        
+    
+    }
+    
+    
+    .content3 .bang1 .hang2 .cot1 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.786);
+        text-align: center;
+    }
+    
+    .content3 .bang1 .hang2 .cot1 .p {
+    
+        margin: 0 auto;
+        color: rgba(0, 0, 255, 0.802);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+    
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang1 .hang1 .cot2 {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.786);
+        overflow: hidden;
+    }
+    
+    .content3 .bang1 .hang1 .cot2 img {
+    
+        width: 100%;
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang1 .hang2 .cot2 {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.786);
+    
+    }
+    
+    .content3 .bang1 .hang2 .cot2 .p {
+    
+        margin: 0 auto;
+        color: rgba(0, 0, 255);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 20px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .content3 .bang2 {
+    
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        border-spacing:  0px;
+    
+    }
+    
+    .content3 .bang2 .hang1 .cot1 {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(255, 0, 0, 0.802), rgba(255, 255, 255, 0.795));
+    
+        text-align: center;
+        
+    }
+    
+    .content3 .bang2 .hang1 .cot1 .p {
+    
+        margin: 0 auto;
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 200px;
+    
+        
+    
+    }
+    
+    
+    .content3 .bang2 .hang2 .cot1 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.786);
+        text-align: center;
+    }
+    
+    .content3 .bang2 .hang2 .cot1 .p {
+    
+        margin: 0 auto;
+        color: rgba(255, 0, 0, 0.802);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+    
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang2 .hang1 .cot2 {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.786);
+        overflow: hidden;
+    }
+    
+    .content3 .bang2 .hang1 .cot2 img {
+    
+        width: 100%;
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang2 .hang2 .cot2 {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.786);
+    
+    }
+    
+    .content3 .bang2 .hang2 .cot2 .p {
+    
+        margin: 0 auto;
+        color: rgb(255, 0, 0);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 20px;
+    
+    }
+    
+    
+    
+    
+    
+    .content3 .bang3 {
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        border-spacing:  0px;
+    
+    }
+    
+    .content3 .bang3 .hang1 .cot1 {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(255, 255, 0, 0.802), rgba(0, 0, 0, 0.786));
+    
+        text-align: center;
+        
+    }
+    
+    .content3 .bang3 .hang1 .cot1 .p {
+    
+        margin: 0 auto;
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 200px;
+    
+    }
+    
+    
+    .content3 .bang3 .hang2 .cot1 {
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.786);
+        text-align: center;
+    }
+    
+    .content3 .bang3 .hang2 .cot1 .p {
+    
+        margin: 0 auto;
+        color: rgba(255, 255, 0, 0.802);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+    
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang3 .hang1 .cot2 {
+        width: 100%;
+        height: 200px;
+        background-color: rgba(26, 26, 26, 0.786);
+        overflow: hidden;
+    }
+    
+    .content3 .bang3 .hang1 .cot2 img {
+    
+        width: 100%;
+        
+    
+    }
+    
+    
+    
+    
+    .content3 .bang3 .hang2 .cot2 {
+        width: 100%;
+        background-color: rgba(6, 6, 6, 0.786);
+    
+    }
+    
+    .content3 .bang3 .hang2 .cot2 .p {
+    
+        margin: 0 auto;
+        color: rgba(255, 255, 0);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 20px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
