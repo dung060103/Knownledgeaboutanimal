@@ -304,3 +304,7 @@ footer.hide
     }
 
 }
+.item_content .title
+{
+    font-size: 22px;
+}
