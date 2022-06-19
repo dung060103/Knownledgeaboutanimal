@@ -1,3 +1,4 @@
+import {database, getScientific_Class, list_Class} from "./database.js";
 window.addEventListener('load',function ()
 {
     document.querySelectorAll('.list_Animals .item_Animals .select a')[7].textContent='Mammalia';
@@ -451,51 +452,8 @@ function click_search_btn_close(event)
     document.querySelector('.item_Search_Animals').classList.remove('is-active');
 }
     
-    var Animal = function(Animal_name, SCname, urlIMG,intro,nameClass,habitat,live,phylum)
-{
-    this.Animal_name=Animal_name;
-    this.SCname=SCname;
-    this.urlIMG=urlIMG;
-    this.intro=intro;
-    this.nameClass=nameClass;
-    this.habitat=habitat;
-    this.live=live;
-    this.phylum=phylum;
-}
 
-data_animals =
-[ new Animal(
-    'Javan Tiger',
-    'Panthera tigris sondaica',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Java_Tiger.jpg/800px-Java_Tiger.jpg',
-    'The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java until the mid-1970s. It was hunted to extinction, and its natural habitat converted for agricultural land use and infrastructure. It was one of the three tiger populations in the Sunda Islands.',
-    'Mammalia',
-    'forested areas',
-    'Meru Betiri',
-    'Chordata'
-    ),
-    new Animal(
-        'Bengal Tiger',
-        'Panthera tigris tigris',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Adult_male_Royal_Bengal_tiger.jpg/1024px-Adult_male_Royal_Bengal_tiger.jpg',
-        'The Bengal tiger is a population of the Panthera tigris tigris subspecies. It ranks among the biggest wild cats alive today. It is considered to belong to the world\'s charismatic megafauna.',
-        'Mammalia',
-        'forested areas',
-        'Meru Betiri',
-        'Chordata'
-        ),
-    new Animal(
-        'Vietnamese Pot-bellied Pig',
-        'Sus scrofa domesticus',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg/330px-Pot-bellied_pigs_in_Lisbon_Zoo_2008.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'open woodlands',
-        'Ha Nam, Ninh Binh and Thai Binh',
-        'Chordata'
-
-    )];
-        console.log(data_animals.length);
+        console.log(database.length);
 function load_search_animal()
 {
     var myInput=document.querySelector('.item_Search_Animals .input_search input').value;
@@ -507,10 +465,10 @@ function load_search_animal()
             console.log(old_element);
     }
     document.querySelector('.container_result').classList.remove('is-active');
-    for(var i=0;i<data_animals.length;i++)
+    for(var i=0;i<database.length;i++)
     {
-
-        if(data_animals[i].Animal_name.toUpperCase().indexOf(myInput.toUpperCase())>-1 || data_animals[i].SCname.toUpperCase().indexOf(myInput.toUpperCase())>-1)
+        console.log(database[i].list_OtherIMGs[0].itemUrlIMG);
+        if(database[i].name_Animal.toUpperCase().indexOf(myInput.toUpperCase())>-1 || database[i].ScienceAnimal.toUpperCase().indexOf(myInput.toUpperCase())>-1)
         {
             if(myInput.trim()=="")
             {
@@ -527,40 +485,40 @@ function load_search_animal()
                 var idxEnd ;
                 var text_Name;
                 var text_SCName;
-                if(data_animals[i].Animal_name.toUpperCase().indexOf(myInput.toUpperCase())>-1)
+                if(database[i].name_Animal.toUpperCase().indexOf(myInput.toUpperCase())>-1)
                 {
-                    idxBegin= data_animals[i].Animal_name.toUpperCase().indexOf(myInput.toUpperCase());
-                    idxEnd =data_animals[i].Animal_name.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
+                    idxBegin= database[i].name_Animal.toUpperCase().indexOf(myInput.toUpperCase());
+                    idxEnd =database[i].name_Animal.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
                     const span = document.createElement('span');
-                    span.textContent = data_animals[i].Animal_name.substring(idxBegin,idxEnd);
+                    span.textContent = database[i].name_Animal.substring(idxBegin,idxEnd);
                     span.style.backgroundColor='green';
-                    text_Name= data_animals[i].Animal_name.substring(0,idxBegin) + span.outerHTML + data_animals[i].Animal_name.substring(idxEnd , data_animals[i].Animal_name.length);
-                    text_SCName=data_animals[i].SCname;
+                    text_Name= database[i].name_Animal.substring(0,idxBegin) + span.outerHTML + database[i].name_Animal.substring(idxEnd , database[i].name_Animal.length);
+                    text_SCName=database[i].ScienceAnimal;
                 }
                 else 
                 {
-                    idxBegin= data_animals[i].SCname.toUpperCase().indexOf(myInput.toUpperCase());
-                    idxEnd =data_animals[i].SCname.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
-                    idxBegin= data_animals[i].SCname.toUpperCase().indexOf(myInput.toUpperCase());
-                    idxEnd =data_animals[i].SCname.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
+                    idxBegin= database[i].ScienceAnimal.toUpperCase().indexOf(myInput.toUpperCase());
+                    idxEnd =database[i].ScienceAnimal.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
+                    idxBegin= database[i].ScienceAnimal.toUpperCase().indexOf(myInput.toUpperCase());
+                    idxEnd =database[i].ScienceAnimal.toUpperCase().indexOf(myInput.toUpperCase())+myInput.length;
                     const span = document.createElement('span');
-                    span.textContent = data_animals[i].SCname.substring(idxBegin,idxEnd);
+                    span.textContent = database[i].ScienceAnimal.substring(idxBegin,idxEnd);
                     span.style.backgroundColor='green';
-                    text_SCName= data_animals[i].SCname.substring(0,idxBegin) + span.outerHTML + data_animals[i].SCname.substring(idxEnd , data_animals[i].SCname.length);
-                    text_Name=data_animals[i].Animal_name;
+                    text_SCName= database[i].ScienceAnimal.substring(0,idxBegin) + span.outerHTML + database[i].ScienceAnimal.substring(idxEnd , database[i].ScienceAnimal.length);
+                    text_Name=database[i].name_Animal;
                 }
-
-                
+                var conservation = database[i].Conservation;
+                // console.log(conservation.ConservationStatus);
                 var new_element= document.createElement('div');
                 new_element.classList.add('info_animals_search');
                 new_element.innerHTML=
                 `<div class="img-animals_search"><img
-                                    src="${data_animals[i].urlIMG}"
-                                    alt="${data_animals[i].Animal_name}"></div>
+                                    src="${database[i].list_OtherIMGs[0].itemUrlIMG}"
+                                    alt="${database[i].name_Animal}"></div>
                             <div class="short_info_animal_search">
                                 <div class="slide_short_info intro_short_animal_search">
                                     <div class="title_name_animal">${text_Name}</div>
-                                    ${data_animals[i].intro}
+                                   <p> ${database[i].IntroCard}</p>
                                 </div>
                                 <div class="slide_short_info">
                                     <table>
@@ -573,25 +531,25 @@ function load_search_animal()
                                             <tr>
                                                 <div class="class_animal">
                                                 <td> <label for="class_animal">Class: </label></td>
-                                                <td>${data_animals[i].nameClass}</td>
+                                                <td>${database[i].scientific_Classification.Class}</td>
                                             </div>
                                             </tr>
                                             <tr>
                                                 <div class="habitat_animal">
-                                                <td><label for="habitat_animal">Habitat:</label></td>
-                                                <td>${data_animals[i].habitat}</td>
+                                                <td><label for="habitat_animal">Conversion Status:</label></td>
+                                                <td>${database[i].Conservation}</td>
                                             </div>
                                             </tr>
                                             <tr>
                                                 <div class="live_animal">
                                                 <td><label for="live_animal">Live: </label></td>
-                                            <td>${data_animals[i].live}</td>
+                                            <td>${database[i].loadCharacteristics.mapAnimal.captionMapAnimal}</td>
                                         </div>
                                             </tr>
                                             <tr>
                                                 <div class="industry_animal">
                                                 <td><label for="industry_animal">Phylum:</label></td>
-                                            <td>${data_animals[i].phylum}</td>
+                                            <td>${database[i].scientific_Classification.Phylum}</td>
                                         </div>
                                             </tr>
                                     </table>

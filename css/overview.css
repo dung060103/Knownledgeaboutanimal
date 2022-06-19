@@ -1,7 +1,12 @@
 
 body {
     background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* thiet lap vitri coding cho hinh nen  */
+    background-attachment: fixed; 
 }
+
 
 
 #web {
@@ -529,7 +534,7 @@ body {
 
 @media (max-width: 415px) {
 
-
+    
 
 
     #web {

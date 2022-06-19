@@ -1,0 +1,450 @@
+
+#contentdetail{
+    width: 100% ;
+    margin-left: -6px;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    position: absolute;
+    top: 0;
+    bottom: 40%;
+    position: none;
+    overflow-y: hidden;
+    height:100%;
+    
+    animation-name: hieuunghien;
+    animation-duration: 0.5s; 
+    background-color: rgba(44, 49, 44, 0.5);
+    transition: 1s;
+}
+ #formdetail{
+    
+    top: 5%;
+    position:fixed;
+     width: 90%;
+     height: 90%;
+     background: rgba(255, 255, 255, 0.87);
+     box-shadow: 0 0 10px #000;
+     align-items: center;
+     align-content: center;
+     border-radius: 0px;
+
+    display: block; 
+
+     
+     transition: 2s;
+     z-index: 4000;
+    overflow: hidden;
+    /* background-image: url(../Animal/picture/forest1.jpg); */
+ }
+
+#formdetail .media{
+    /* float: left; */
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+#formdetail .media i{
+    margin: 5px;
+    padding: 5px;
+    font-size: 19px;
+    position: relative;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+ @keyframes hieuunghien{
+     from {
+         top: -80px;
+ 
+     }
+     to{
+         top: 0px;
+     }
+ }
+ @keyframes hieuung{
+     from {
+         transform: translateY(-20%);
+ 
+     }
+     to{
+         transform: translateY(0);
+     }
+ }
+ #exit{
+     font-size: 30px;
+     top: 2px;
+     right: 2px;
+     cursor: pointer;                              
+ }
+ #exit:hover{
+     color: aqua;
+     transition: 0.5s;
+ }
+ 
+ #contentdetail .btn{
+     width: 150px;
+     height: 50px;
+     border: none;
+     border-radius: 50px;
+     background-color: aqua;
+     font-weight: 600;
+     margin: 10px 0;
+     text-transform: uppercase;
+     cursor: pointer;
+ }
+ #contentdetail .btn:hover{
+     background: rgb(65, 204, 204);
+ }
+
+ 
+ 
+ @media (max-width: 779px) {
+     #formdetail{
+         margin-top: 60px;
+         width: 100vw;
+         height: auto;
+     }
+     
+ }
+ 
+
+.contai{
+    height: 500px;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+} 
+ 
+ 
+ 
+ .container-1{
+    margin: 20px auto;
+    width: 90%;
+    justify-content: center;
+    display: grid;
+    /* overflow-y: scroll;   */
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+/* .slide-show{
+ 
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+  
+}
+.slide-show .slide{
+    margin: 0 auto;
+    width: 2600px;
+
+    transition: 0.5s ease-in;
+}
+
+.slide-show .slide img{
+    width: 25%;
+    height: 426px;
+    float: left;
+    /* margin-left: -100px; */
+    /* transition: 0.5s all ; */
+
+/* } */
+/* .dieuhuong{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    top: 40%;
+    padding-left: 20px;
+    z-index: 1999; 
+} */    
+
+/* .dieuhuong i:last-child{
+    position: relative;
+    left: 640%;
+}  */
+.container-1 .slide-show{
+    /* overflow-y: auto; */
+    height: auto;
+    /* margin-top: 35px; */
+}
+
+figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    /* height: 400px; */
+    height: auto;
+    overflow: hidden;
+    cursor: zoom-in;
+    margin-left: -20px;
+  }
+  
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  
+  figure.zoom img{
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.right-left{
+    margin-top: 30px;
+    height: 400px;
+}
+.right-left i{
+    margin-right: 10px;
+}
+.right-left .animal-name{
+    /* color: green; */
+    font-size: 20px;
+}
+
+.right-left .type table{
+    /* margin: auto 20px; */
+    border-spacing: 2px;
+    border: rgb(255, 7, 7);
+    text-align: center;
+}
+
+.right-left .type table tr th{
+    border-right: 3px solid #000;
+    width: 80px;
+    background: #444;
+    color: #fff;
+    text-align: center;
+}
+
+.right-left .type table tr td{
+    background: rgb(148, 105, 105);
+}
+
+.right-left hr{
+    width: 80%;
+    margin-top: 10px;
+    border: none;
+    height: 3px;
+    background: #000;
+}
+
+.right-left .live{
+    color: red;
+}
+
+.right-left .lala{
+    /* display: grid; */
+    font-size: 18px;
+    /* grid-template-columns: repeat(2,1fr); */
+}
+
+.lala table{
+    margin: 40px 0;
+    width: 100%;
+}
+
+.lala table th{
+    /* border: 1px solid black; */
+    border-bottom: 2px solid #000;
+    padding: 10px;
+}
+
+.lala table tr:nth-child(4) th{
+    border-bottom: none;
+}
+
+.lala table tr th:first-child{
+    color: #fff;
+    background: #444;
+    font-size: 15px;
+}
+
+.lala table tr th:last-child{
+    color: #fff;
+    background: rgb(134, 110, 110);
+    font-size: 15px;
+}
+
+.features h3{
+    text-align: center;
+}
+
+
+.features{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.features .table table{
+    margin: 0 auto;
+}
+
+.features .table table tr th{
+    width: 20%;
+    cursor: pointer;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.features .table table tr th:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.features .similar .species-animal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.features .similar h2{
+    text-align: center;
+}
+
+.features .similar .species-animal .card-2 {
+    width: 300px;
+    height: auto;
+    /* margin-left: 20px; */
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.features .similar .species-animal .card-2 .img{
+    /* position: relative; */
+    overflow: hidden;   
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    /* border-bottom: 2px solid #000; */
+    /* box-sizing: border-box; */
+}
+
+
+.features .similar .species-animal .card-2 .img img{
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    /* overflow: hidden; */
+}
+
+.features .similar .species-animal .card-2:hover .img img{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.features .similar .species-animal .card-2 .detail-content{
+    text-align: center;
+}
+
+.similar{
+    display: none;
+}
+
+.introduce .intro-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map{
+    height: 400px;
+    display: none;
+}
+
+.taxonomy{
+    display: none;
+    height: 200px;
+    width: 100%;
+}
+
+.taxonomy{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.taxonomy table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+
+.taxonomy table tr th, .taxonomy table tr td {
+    padding: 5px 20px;
+}
+
+.taxonomy table tr th{
+    background: #444;
+    color: #fff;
+}
+
+
+@media(max-width:1200px){
+    contentdetail .container-1{
+        /* margin-top: 200px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .slide-show{
+        margin: 0 auto;
+        overflow-y: visible;
+    }
+    .right-left{
+        margin-left: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .right-left .features .feature-title{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    figure.zoom {
+        margin: 0 auto;
+    }
+
+    .right-left .type table{    
+        margin: 0 auto;
+    }
+    
+    #formdetail{
+        width: 90%;
+    }
+}
+
+
+    @media (max-width:800px){
+        
+    }
+
+
+
+
+    #contentdetail #formdetail .seeU{
+        position: absolute;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+        z-index: 9999;
+        display: none;
+    }

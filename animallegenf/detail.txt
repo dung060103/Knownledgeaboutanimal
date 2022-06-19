@@ -1,0 +1,237 @@
+<div id="content">
+            <div id="formdetail">
+                <div class="media"><span><i class="fa-brands fa-unity" onclick="div3d()"></i> </span>
+                    <span><i class="fa-solid fa-circle-play"  onclick="divvideo()"></i> </span>
+                    <span><i class="fa-solid fa-music"  onclick="divmusic()"></i></span>
+                </div>
+                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
+                <div class="contai">
+
+
+                    <div class="container-1">
+                        <div class="slide-show">
+                            <figure class="zoom" style="background-image:url(images/Animals/bear2.jpg);"
+                                onmousemove="zoom(event)" ontouchmove="zoom(event)">
+                                <img src="images/Animals/bear.jpg" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="right">
+                            <div class="right-left">
+                                <div class="animal-name">
+                                    <h2><i class="fa-solid fa-paw"></i>Brown Bear</h2>
+                                </div>
+                                <div class="type">
+                                    <table cellspacing="5">
+                                        <tr>
+                                            <th>Type</th>
+                                            <td>Dangerous animal</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Class</th>
+                                            <td>Mammalia</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="lala">
+                                    <table cellspacing="0">
+                                        <tr>
+                                            <th>
+                                                STATUS
+                                            </th>
+                                            <th>
+                                                Least Concern
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>HEIGHT</th>
+                                            <th>2.4 - 3m</th>
+                                        </tr>
+                                        <tr>
+                                            <th>FOOD</th>
+                                            <th>Salmon, fish, fruit, mushroom,...</th>
+                                        </tr>
+                                        <tr>
+                                            <th>NATURAL ENEMY</th>
+                                            <th>Tiger, wolf,...</th>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                                <hr>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="features">
+                        <div class="table">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th class="btn-1">MAPS</th>
+
+                                    <th class="btn-2">INTRODUCE</th>
+                                    <th class="btn-4">TAXONOMY</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="map">
+
+                        </div>
+
+                        <div class="similar">
+                            <h2>Other species commonly misidentified as this species</h2>
+                            <div class="species-animal">
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>Black Bear</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>Panda</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>Ursus Tibetanus</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="introduce">
+
+                            <div class="intro-content">
+                                <h2>
+                                    The brown bear is a large bear species found across Eurasia and North America
+                                </h2>
+                                In North America, the populations of brown bears are called grizzly bears, while the
+                                subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear.
+                                It is one of the largest living terrestrial members of the order Carnivora, rivaled in
+                                size only by its closest relative, the polar bear (Ursus maritimus), which is much less
+                                variable in size and slightly bigger on average.
+                                The brown bear's range includes parts of Russia, Central Asia, the Himalayas, China,
+                                Canada, the United States, Hokkaido, Scandinavia, Finland, the Balkans, the Picos de
+                                Europa and the Carpathian region (especially Romania), Iran, Anatolia, and the Caucasus.
+                                The brown bear is recognized as a national and state animal in several European
+                                countries.
+                                <br> While the brown bear's range has shrunk, and it has faced local extinctions across
+                                its wide range, it remains listed as a least concern species by the International Union
+                                for Conservation of Nature (IUCN) with a total estimated population in 2017 of 110,000.
+                                As of 2012, this and the American black bear are the only bear species not classified as
+                                threatened by the IUCN, though the large sizes of both bears may be a disadvantage due
+                                to increased competition with humans. Populations that were hunted to extinction in the
+                                19th and 20th centuries are the Atlas bear of North Africa and the Californian, Ungavan
+                                and Mexican populations of the grizzly bear of North America. Many of the populations in
+                                the southern parts of Eurasia are highly endangered as well. One of the smaller-bodied
+                                forms, the Himalayan brown bear, is critically endangered, occupying only 2% of its
+                                former range and threatened by uncontrolled poaching for its body parts. The Marsican
+                                brown bear of central Italy is one of several currently isolated populations of the
+                                Eurasian brown bear and is believed to have a population of just 50 to 60 bears.
+                            </div>
+
+                        </div>
+
+                        <div class="taxonomy" style="overflow-y: auto;">
+
+
+                            <!-- <table border="" cellspacing="0" > 
+                        <tr>
+                            <th>Kingdom</th>
+                            <th>Phylum</th>
+                            <th>Class</th>
+                            <th>Order</th>
+                            <th>Family</th>
+                            <th>Genus</th>
+                            <th>Species</th>
+                        </tr>
+                        <tr>
+                            <td>Animalia</td>
+                            <td>Chordata</td>
+                            <td>Mammalia</td>
+                            <td>Carnivora</td>
+                            <td>Ursidae</td>
+                            <td>Ursus</td>
+                            <td>U.arctos</td>
+                        </tr>
+                    </table> -->
+
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Kingdom</th>
+                                        <th>Phylum</th>
+                                        <th>Class</th>
+                                        <th>Order</th>
+                                        <th>Family</th>
+                                        <th>Genus</th>
+                                        <th>Species</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Animalia</td>
+                                        <td>Chordata</td>
+                                        <td>Mammalia</td>
+                                        <td>Carnivora</td>
+                                        <td>Ursidae</td>
+                                        <td>Ursus</td>
+                                        <td>U.arctos</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="seeU" id="seeU">
+                    <i class="fa-solid fa-circle-xmark" id="exit" onclick="exitSeeU()"></i>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>

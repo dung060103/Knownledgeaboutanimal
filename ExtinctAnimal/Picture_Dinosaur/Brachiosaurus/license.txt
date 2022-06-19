@@ -1,0 +1,11 @@
+Model Information:
+* title:	Brachiosaurus 3Dcoat
+* source:	https://sketchfab.com/3d-models/brachiosaurus-3dcoat-5d24df20b2d3439fa5bc8d225a71ba82
+* author:	Sara Minarai (https://sketchfab.com/saraminarai)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Brachiosaurus 3Dcoat" (https://sketchfab.com/3d-models/brachiosaurus-3dcoat-5d24df20b2d3439fa5bc8d225a71ba82) by Sara Minarai (https://sketchfab.com/saraminarai) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

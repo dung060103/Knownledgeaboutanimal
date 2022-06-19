@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Animals</title>
+    <link rel = "shortcut icon" type="image/png" href="images/LOGO/dinosaur_logo.png" >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,6 +22,8 @@
   <!-- link part -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/animal.css">
+  <!-- css DETAILS -->
+        <link rel="stylesheet" href="css/details.css">
 </head>
 
 <body>
@@ -79,8 +82,8 @@
                 <div class="item_menu no_list" id="menu3"><a href="javascript:void(0)">Search Animals</a></div>
                 <div class="item_menu have_list"><a href="animal.html" onclick="">Animals</a>
                 </div>
-                <div class="item_menu have_list"><a href="javascript:void(0)">Legendary Animals</a></div>
-                <div class="item_menu have_list"><a href="javascript:void(0)">Extinct Animals</a></div>
+                <div class="item_menu have_list"><a href="legendary_animal.html">Legendary Animals</a></div>
+                <div class="item_menu have_list"><a href="ExtinctAnimal/Coding/Extinct.html">Extinct Animals</a></div>
                 <div class="item_menu no_list"><a href="news.html">News</a></div>
                 <div class="item_menu no_list"><a href="javascript:void(0)" onclick="opensignin()">Login</a></div>
                 <div class="item_menu no_list"><a href="contact.html">Contact</a></div>
@@ -277,7 +280,7 @@
     </content>
     <footer>
         <div class="ft_list_option">
-            <div class="item_option"><a href="">About</a></div>
+            <div class="item_option"><a href="animallegenf/test.html">About</a></div>
             <div class="item_option"><a href="">Contact Us</a> </div>
             <div class="item_option"><a href="">Privacy</a></div>
             <div class="item_option"><a href="">Terms</a></div>
@@ -353,13 +356,15 @@
     <!-- </div> -->
 
 
-    <script src="js/header.js">
+    <script type="module" src="js/header.js">
 
 
     </script>
     <script src="js/footer.js"></script>
-    <script src="js/animal.js"></script>
+    <script  type ="module"  src="js/animal.js"></script>
     <script src="js/login.js"></script>
+    <!-- <script src="js/OrbitControls.js"></script> -->
+    
 </body>
 
 </html>

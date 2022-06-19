@@ -1,3 +1,11 @@
+body {
+    background-image: url('../images/Background/BeautifulBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* thiet lap vitri coding cho hinh nen  */
+    background-attachment: fixed;
+}
+
 content
 {
     display: flex;
@@ -14,6 +22,7 @@ content
 }
 .container_type_animal
 {
+    background-color: rgba(255, 255, 255, 0.758);
     width:80vw ;
     height: 320px;
     border: 1px solid black;
@@ -137,6 +146,7 @@ content
     width :280px;
     height:  210px;
     overflow-y: hidden;
+    cursor: pointer;
 }
 .item_animalType table
 {

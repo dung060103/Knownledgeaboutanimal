@@ -13,13 +13,14 @@ footer
     align-items: center;
     position: relative;
     bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    background-color: black;
-    width: 100vw;
+    left: 0;
+    transform: translateX(0%);
+    background-color: rgba(0, 0, 0, 0.621);
+    /* width: 100vw; */
     padding: 20px 10px;
     box-sizing: border-box;
     margin-top: 10px;
+    /* right: 0; */
 }
 footer.hide
 {
@@ -47,7 +48,7 @@ footer.hide
 .ft_list_icon_contact
 {
     /* transform: translateX(-50%); */
-    width: 500px;
+    /* width: 500px; */
     display: flex;
     justify-content: space-evenly;
     margin: 10px 0;
@@ -63,25 +64,28 @@ footer.hide
     -webkit-text-stroke: 1px black;
     color: white;
     cursor: pointer;
+    padding: 15px;
     transition: .3s ease-in;
     transform: scale(0.8);
-
 }
 .icon_contact:hover
 {
-    transform: scale(1);
+    transform: scale(1.5);
 }
 .icon_contact:nth-child(1) :hover 
 {
     color: red;
+    text-shadow: 0px 0px 20px red;
 }
 .icon_contact:nth-child(2) :hover 
 {
-    color: blue;
+    color: rgb(0, 76, 255);
+    text-shadow: 0px 0px 20px rgb(0, 76, 255);
 }
 .icon_contact:nth-child(3) :hover 
 {
     color: white;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 /* .icon_contact:nth-child(3) :hover i
 {
@@ -91,12 +95,14 @@ footer.hide
 } */
 .icon_contact:nth-child(4) :hover 
 {
-    color: pink;
+    color: rgb(255, 0, 242);
+    text-shadow: 0px 0px 20px rgb(255, 0, 242);
     
 }
 .icon_contact:nth-child(5) :hover 
 {
     color: cyan;
+    text-shadow: 0px 0px 20px cyan;
 }
 .form_contact
 {
@@ -181,7 +187,7 @@ footer.hide
 {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    /* width: 100vw; */
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -307,4 +313,9 @@ footer.hide
 .item_content .title
 {
     font-size: 22px;
+}
+body
+{
+    min-height: fit-content !important;
+    max-height: 100vh;
 }

@@ -32,7 +32,7 @@ a:hover
 }
 header {
     width: 100%;
-    z-index: 9999;
+    z-index: 10;
 }
 
 
@@ -40,8 +40,9 @@ header {
 content {
         /* width: 100vw;
         height: 100vh; */
-    margin-top: 130px;
-    display: block;
+        margin-top: 130px;
+        display: block;
+        min-height: 100vh;
 }
 
 
@@ -70,7 +71,8 @@ header
     flex-direction: column;
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.46);
+    /* background-image: linear-gradient(rgba(157, 240, 246, 0.715), rgba(3, 230, 255, 0.655)); */
 }
 .header
 {

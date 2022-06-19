@@ -1,8 +1,15 @@
+import {database, findWithNameSC, getScientific_Class, list_Class} from "./database.js";
 window.addEventListener('load',function()
 {
-
+    // console.log(database);
     load_animal_cont_Type();
     load_animalType();
+    var listIAnimalType=document.querySelectorAll(".list_animalType .item_animalType");
+    console.log(listIAnimalType.length)
+    // for(var i=0;i<listIAnimalType.length;i++)
+    // {
+    //         listIAnimalType[i].addEventListener("click",renderDataAnimal);
+    // }
     const list_animalTypes = document.querySelectorAll('.list_animalType');
     const prebtn= document.querySelectorAll('.fa-solid.fa-angles-left');
     const nxtbtn= document.querySelectorAll('.fa-solid.fa-angles-right');
@@ -44,11 +51,13 @@ window.addEventListener('load',function()
 
     // console.log(list_animalTypes[i].width);
 
-    var value= parseInt(document.querySelector('.list_animalType').getBoundingClientRect().width/document.querySelector('.item_animalType').getBoundingClientRect().width)
+    var value= parseInt(document.querySelector('.list_animalType').getBoundingClientRect().width/document.querySelector('.item_animalType').getBoundingClientRect().width);
+    // var value=321312
     for(var i=0;i<list_animalTypes.length;i++)
     {
         list_animalTypes[i].style.gridTemplateColumns= `repeat(${value}, 1fr)`;
     }
+    // console.log(JSON.stringify(ALL_Animal));
 });
  function show_hover(event)
  {
@@ -72,258 +81,74 @@ var Animal = function(Animal_name, SCname, urlIMG,intro,nameClass,habitat,live,p
     this.live=live;
     this.phylum=phylum;
 }
-var list_type=['Carnivores' ,'Herbivore', 'Insect','omnivores'];
-ALL_Animal =[
-[ new Animal(
-    'Javan Tiger',
-    'Panthera tigris sondaica',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Java_Tiger.jpg/800px-Java_Tiger.jpg',
-    'The Javan tiger was a Panthera tigris sondaica population native to the Indonesian island of Java until the mid-1970s. It was hunted to extinction, and its natural habitat converted for agricultural land use and infrastructure. It was one of the three tiger populations in the Sunda Islands.',
-    'Mammalia',
-    'forested areas',
-    'Meru Betiri',
-    'Chordata'
-    ),
-    new Animal(
-        'Bengal Tiger',
-        'Panthera tigris tigris',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Adult_male_Royal_Bengal_tiger.jpg/1024px-Adult_male_Royal_Bengal_tiger.jpg',
-        'The Bengal tiger is a population of the Panthera tigris tigris subspecies. It ranks among the biggest wild cats alive today. It is considered to belong to the world\'s charismatic megafauna.',
-        'Mammalia',
-        'forested areas',
-        'Kenya, India, Sri Lanka',
-        'Chordata'
-        ),
-    new Animal(
-        'Black panther',
-        'Sus scrofa domesticus',
-        'https://i1.sndcdn.com/avatars-000006005197-3l22oj-t500x500.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'open woodlands',
-        'Ha Nam, Ninh Binh and Thai Binh',
-        'Chordata'
-
-    ),
-    new Animal(
-        'Python',
-        'Sus scrofa domesticus',
-        'https://www.cloverdx.com/hubfs/david-clode-PsqJlaAlvXk-unsplash__1618841662_5.81.219.59.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'open woodlands',
-        'Africa, Asia, and Australia',
-        'Chordata'
-
-    ),
-    new Animal(
-        'Hammerhead shark',
-        'Sus scrofa domesticus',
-        'https://frontiersinblog.files.wordpress.com/2020/01/frontiers-marine-science-estimating-global-catches-marine-recreational-fishes.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'open woodlands',
-        'Ecuador, Cocos Island',
-        'Chordata'
-
-    )]
-    ,
-    [
-        new Animal(
-        'Rabbit',
-        'Sus scrofa domesticus',
-        'https://www.oxbowanimalhealth.com/uploads/images/Feb_2019_blog_rabbit_noises_thumbnail.png',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'open woodlands',
-        'Ecuador, Cocos Island',
-        'Chordata'
-
-    ),
-    new Animal(
-        'Cow',
-        'Sus scrofa domesticus',
-        'https://img.freepik.com/free-photo/cute-cow_1385-1806.jpg?w=360',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House,Meadow ',
-        'Ecuador, Cocos Island',
-        'Chordata'
-
-    ),
-    
-    new Animal(
-        'Sheep',
-        'Sus scrofa domesticus',
-        'https://external-preview.redd.it/x3NSgvoP35r9bmRHMQyOdYk0TqragUUk9YjgiAOTHM8.jpg?auto=webp&s=ebe2275b3f8c709528fe6312a43924acb24e7c56',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House,Meadow ',
-        'Ecuador, Cocos Island',
-        'Chordata'
-
-    ),
-    new Animal(
-        'Zebra',
-        'Sus scrofa domesticus',
-        'https://resources.stuff.co.nz/content/dam/images/1/f/s/r/4/w/image.related.StuffLandscapeSixteenByNine.710x400.1frz5d.png/1480452024764.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House,Meadow ',
-        'Ecuador, Cocos Island',
-        'Chordata'
-
-    )
-    ],
-    
-    ///////////////////////////////////
-    [new Animal(
-        'Butterfly',
-        'Sus scrofa domesticus',
-        'https://cdn.wallpapersafari.com/43/72/N3dF9T.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'Tree,Flower',
-        'Ecuador, Cocos Island',
-        'Arthropoda'
-    ),
-    new Animal(
-        'Bee',
-        'Sus scrofa domesticus',
-        'https://www.treehugger.com/thmb/babqraV9o7TrcMp_KobhXBUqpdI=/1280x768/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__treehugger__images__2018__04__Apis_mellifera-0c1678fc8e0d45a499ddc42699b955f6.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'Tree,Flower',
-        'Ecuador, Cocos Island',
-        'Arthropoda'
-    ),
-    new Animal(
-        'Cockroach',
-        'Sus scrofa domesticus',
-        'https://c8.alamy.com/zooms/9/1dd127279206469f874c612cd5fd6749/prtyaj.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House',
-        'Ecuador, Cocos Island',
-        'Arthropoda'
-    ),
-    new Animal(
-        'FireFly',
-        'Sus scrofa domesticus',
-        'https://d25vtythmttl3o.cloudfront.net/uploads/sites/164/2018/08/Firefly_altered-with-glow-500x497.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House',
-        'Ecuador, Cocos Island',
-        'Arthropoda'
-    )
-]
-    ,
-[
-    new Animal(
-        'Domestic dog',
-        'Sus scrofa domesticus',
-        'https://lh3.googleusercontent.com/xCGq6z8ttJPLImoEYYChE57se-Lu2yVwQolx5HbAmaiOLfMf3wJjzz690LA4O402IyfTPuFaErY4lEBe93T9LU7LiMM=w640-h400-e365-rj-sc0x00ffffff',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House',
-        'Much where',
-        'Chordata'
-    ),
-    new Animal(
-        'Gloucestershire Pig',
-        'Sus scrofa domesticus',
-        'https://i.pinimg.com/236x/0f/10/bb/0f10bbe1a06ab7e2cf327967915bb7f6.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'House',
-        'Much where',
-        'Chordata'
-    ),
-    new Animal(
-        'White Catfish',
-        'Sus scrofa domesticus',
-        'https://thumbs.dreamstime.com/b/albino-catfish-picture-aquarium-44250570.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'Lake',
-        'Much where',
-        'Chordata'
-    ),
-    new Animal(
-        'American crow',
-        'Sus scrofa domesticus',
-        'https://www.allaboutbirds.org/guide/assets/photo/59858041-480px.jpg',
-        'Vietnamese Pot-bellied is the exonym for the Lon I (Vietnamese: Lợn Ỉ) or I pig,[a] an endangered traditional Vietnamese breed of small domestic pig.',
-        'Mammalia',
-        'Forested areas',
-        'Much where',
-        'Chordata'
-    )
-]
-];
+// var list_Class=['Mammalia' ,'Amphibia', 'Bivalves','Actinopterygii'];
     function load_animalType()
     {
         var list = document.querySelectorAll('.list_animalType');
-        for(var j =0;j< list_type.length;j++)
+        for(var j =0;j<list_Class.length;j++)
         {
-            for(var i=0;i<ALL_Animal[j].length;i++)
+           var animalRS= getScientific_Class(list_Class[j])
+            for(var i=0;i<animalRS.length;i++)
             {
                 var div_ = document.createElement('div');
+                div_.setAttribute("data_SCname",`${animalRS[i].ScienceAnimal}`)
                 div_.classList.add('item_animalType');
-                // div_.classList.add('is-active');
+            console.log(animalRS[i].list_OtherIMGs[0].itemUrlIMG)
             div_.innerHTML= `
-          <p>  ${ALL_Animal[j][i].Animal_name}</p>
-            <img src="${ALL_Animal[j][i].urlIMG}" alt="">
-                            <table>
-                                            <tr>
-                                                <div class="name_animal">
-                                                <td><label for="name_animal">Science name: </label></td>
-                                                    <td>${ALL_Animal[j][i].SCname}</td>
-                                                </div>
-                                                </tr>
-                                                <tr>
-                                                    <div class="class_animal">
-                                                    <td> <label for="class_animal">Class: </label></td>
-                                                    <td>${ALL_Animal[j][i].nameClass}</td>
-                                                </div>
-                                                </tr>
-                                                <tr>
-                                                    <div class="habitat_animal">
-                                                    <td><label for="habitat_animal">Habitat:</label></td>
-                                                    <td>${ALL_Animal[j][i].habitat}</td>
-                                                </div>
-                                                </tr>
-                                                <tr>
-                                                    <div class="live_animal">
-                                                    <td><label for="live_animal">Live: </label></td>
-                                                <td>${ALL_Animal[j][i].live}</td>
-                                            </div>
-                                                </tr>
-                                                <tr>
-                                                    <div class="industry_animal">
-                                                    <td><label for="industry_animal">Phylum:</label></td>
-                                                <td>${ALL_Animal[j][i].phylum}</td>
-                                            </div>
-                                                </tr>
-                                        </table>
-                        `
-                        list[j].appendChild(div_);
-            }
-            
+            <p>  ${animalRS[i].name_Animal}</p>
+              <img src="${animalRS[i].list_OtherIMGs[0].itemUrlIMG}" alt="">
+                              <table>
+                                              <tr>
+                                                  <div class="name_animal">
+                                                  <td><label for="name_animal">Science name: </label></td>
+                                                      <td>${animalRS[i].ScienceAnimal}</td>
+                                                  </div>
+                                                  </tr>
+                                                  <tr>
+                                                      <div class="class_animal">
+                                                      <td> <label for="class_animal">Class: </label></td>
+                                                      <td>${animalRS[i].scientific_Classification.Class}</td>
+                                                  </div>
+                                                  </tr>
+                                                  <tr>
+                                                      <div class="habitat_animal">
+                                                      <td><label for="habitat_animal">Family:</label></td>
+                                                      <td>${animalRS[i].scientific_Classification.Family}</td>
+                                                  </div>
+                                                  </tr>
+                                                  <tr>
+                                                      <div class="live_animal">
+                                                      <td><label for="live_animal"> Genus: </label></td>
+                                                  <td>${animalRS[i].scientific_Classification.Genus}</td>
+                                              </div>
+                                                  </tr>
+                                                  <tr>
+                                                      <div class="industry_animal">
+                                                      <td><label for="industry_animal">Phylum:</label></td>
+                                                  <td>${animalRS[i].scientific_Classification.Phylum}</td>
+                                              </div>
+                                                  </tr>
+                                          </table>
+                          `
+                          console.log(div_)
+                          list[j].appendChild(div_)
+
+              
+          }
         }
     }
 
     function load_animal_cont_Type()
     {
-        console.log(list_type.length);
-        for(var i=0;i<list_type.length;i++)
+
+        console.log(list_Class.length);
+        for(var i=0;i<list_Class.length;i++)
         {
             var cont= document.createElement('div')
             cont.classList.add('container_type_animal');
-            cont.classList.add('animal_' + list_type[i].toLowerCase());
+            cont.classList.add('animal_' + list_Class[i].toLowerCase());
             cont.innerHTML=`
-            <div class="after">${list_type[i]}</div>
+            <div class="after">${list_Class[i]}</div>
             <div class="nav-icon_animalType pre_icon_animalType"><i class="fa-solid fa-angles-left"></i></div>
                 <div class="list_animalType">                        
                 </div>
@@ -332,5 +157,253 @@ ALL_Animal =[
             document.querySelector('.main_content').appendChild(cont);
         }
 
+    }
+    function renderDataAnimal(event)
+    {
+        var dataDetail= event.currentTarget;
+        var i = findWithNameSC(dataDetail.getAttribute("data_SCname"))
+        console.log("cscscsd");
+        var newItem  = document.createElement("div");
+        newItem.setAttribute("id","contentdetail")
+        newItem.innerHTML=
+        `
+        <div id="formdetail">
+                <div class="media"><span><i class="fa-brands fa-unity" onclick="div3d()"></i> </span>
+                    <span><i class="fa-solid fa-circle-play"  onclick="divvideo()"></i> </span>
+                    <span><i class="fa-solid fa-music"  onclick="divmusic()"></i></span>
+                </div>
+                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exitDetail()"></i>
+                <div class="contai">
+
+
+                    <div class="container-1">
+                        <div class="slide-show">
+                            <figure class="zoom" style="background-image:url(images/Animals/bear2.jpg);"
+                                onmousemove="zoom(event)" ontouchmove="zoom(event)">
+                                <img src="images/Animals/bear.jpg" alt="">
+                            </figure>
+
+                        </div>
+                        <div class="right">
+                            <div class="right-left">
+                                <div class="animal-name">
+                                    <h2><i class="fa-solid fa-paw"></i>${database[i].name_Animal}</h2>
+                                </div>
+                                <div class="type">
+                                    <table cellspacing="5">
+                                        <tr>
+                                            <th>Kingdom</th>
+                                            <td>${database[i].scientific_Classification.Kingdom}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Class</th>
+                                            <td>${database[i].scientific_Classification.Class}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="lala">
+                                    <table cellspacing="0">
+                                        <tr>
+                                            <th>
+                                                STATUS
+                                            </th>
+                                            <th>
+                                                ${database[i].listConservation}
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>HEIGHT</th>
+                                            <th>2.4 - 3m</th>
+                                        </tr>
+                                        <tr>
+                                            <th>FOOD</th>
+                                            <th>Salmon, fish, fruit, mushroom,...</th>
+                                        </tr>
+                                        <tr>
+                                            <th>NATURAL ENEMY</th>
+                                            <th>Tiger, wolf,...</th>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                                <hr>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="features">
+                        <div class="table">
+                            <table cellspacing="5">
+                                <tr>
+                                    <th class="btn-1">MAPS</th>
+
+                                    <th class="btn-2">INTRODUCE</th>
+                                    <th class="btn-4">TAXONOMY</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="map">
+
+                        </div>
+
+                        <div class="similar">
+                            <h2>Other species commonly misidentified as this species</h2>
+                            <div class="species-animal">
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="${database[i].list_OtherIMGs[0].itemUrlIMG}" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>Black Bear</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="${database[i].list_OtherIMGs[0].itemUrlIMG}" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>Panda</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-2">
+                                    <div class="img">
+                                        <img src="${database[i].list_OtherIMGs[0].itemUrlIMG}" alt="">
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="species-name">
+                                            <h2>${database[i].ScienceAnimal}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="introduce">
+
+                            <div class="intro-content">
+                                <h2>
+                                    The brown bear is a large bear species found across Eurasia and North America
+                                </h2>
+                                In North America, the populations of brown bears are called grizzly bears, while the
+                                subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear.
+                                It is one of the largest living terrestrial members of the order Carnivora, rivaled in
+                                size only by its closest relative, the polar bear (Ursus maritimus), which is much less
+                                variable in size and slightly bigger on average.
+                                The brown bear's range includes parts of Russia, Central Asia, the Himalayas, China,
+                                Canada, the United States, Hokkaido, Scandinavia, Finland, the Balkans, the Picos de
+                                Europa and the Carpathian region (especially Romania), Iran, Anatolia, and the Caucasus.
+                                The brown bear is recognized as a national and state animal in several European
+                                countries.
+                                <br> While the brown bear's range has shrunk, and it has faced local extinctions across
+                                its wide range, it remains listed as a least concern species by the International Union
+                                for Conservation of Nature (IUCN) with a total estimated population in 2017 of 110,000.
+                                As of 2012, this and the American black bear are the only bear species not classified as
+                                threatened by the IUCN, though the large sizes of both bears may be a disadvantage due
+                                to increased competition with humans. Populations that were hunted to extinction in the
+                                19th and 20th centuries are the Atlas bear of North Africa and the Californian, Ungavan
+                                and Mexican populations of the grizzly bear of North America. Many of the populations in
+                                the southern parts of Eurasia are highly endangered as well. One of the smaller-bodied
+                                forms, the Himalayan brown bear, is critically endangered, occupying only 2% of its
+                                former range and threatened by uncontrolled poaching for its body parts. The Marsican
+                                brown bear of central Italy is one of several currently isolated populations of the
+                                Eurasian brown bear and is believed to have a population of just 50 to 60 bears.
+                            </div>
+
+                        </div>
+
+                        <div class="taxonomy" style="overflow-y: auto;">
+
+
+                            <!-- <table border="" cellspacing="0" > 
+                        <tr>
+                            <th>Kingdom</th>
+                            <th>Phylum</th>
+                            <th>Class</th>
+                            <th>Order</th>
+                            <th>Family</th>
+                            <th>Genus</th>
+                            <th>Species</th>
+                        </tr>
+                        <tr>
+                            <td>Animalia</td>
+                            <td>Chordata</td>
+                            <td>Mammalia</td>
+                            <td>Carnivora</td>
+                            <td>Ursidae</td>
+                            <td>Ursus</td>
+                            <td>U.arctos</td>
+                        </tr>
+                    </table> -->
+
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Kingdom</th>
+                                        <th>Phylum</th>
+                                        <th>Class</th>
+                                        <th>Order</th>
+                                        <th>Family</th>
+                                        <th>Genus</th>
+                                        <th>Species</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Animalia</td>
+                                        <td>Chordata</td>
+                                        <td>Mammalia</td>
+                                        <td>Carnivora</td>
+                                        <td>Ursidae</td>
+                                        <td>Ursus</td>
+                                        <td>U.arctos</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="seeU" id="seeU">
+                    <i class="fa-solid fa-circle-xmark" id="exit" onclick="exitSeeU()"></i>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        `
+        document.querySelector("content").appendChild(newItem);
+        newItem.style.display="block";
     }
 
