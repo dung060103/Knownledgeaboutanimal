@@ -1,5 +1,8 @@
 insertHeader()
 insertFooter()
+insertOptionSeason()
+var ColorFall="#fec594"
+var ColorWinter = "#4b79ab"
 window.addEventListener('load',function()
 {
     document.querySelector('.icon_phone').addEventListener('mouseenter',function()
@@ -18,6 +21,16 @@ window.addEventListener('load',function()
     {
         document.querySelector('.text_map.is-active').classList.remove('is-active');
     });
+    var item_optionSeasonSpring = document.querySelector(".item_optionSeason-Spring");
+    item_optionSeasonSpring.addEventListener("click", changedColorWithSeasonSpring);
+    var item_optionSeasonSummer = document.querySelector(".item_optionSeason-Summer");
+    item_optionSeasonSummer.addEventListener("click", changedColorWithSeasonSummer)
+    var item_optionSeasonFall = document.querySelector(".item_optionSeason-Fall");
+    item_optionSeasonFall.addEventListener("click", changedColorWithSeasonFall)
+    var item_optionSeasonWinter = document.querySelector(".item_optionSeason-Winter");
+    item_optionSeasonWinter.addEventListener("click", changedColorWithSeasonWinter)
+    var item_optionSeasonUnset = document.querySelector(".item_optionSeason-Unset");
+    item_optionSeasonUnset.addEventListener("click", changedColorWithDefault)
 })
 
 function insertHeader()
@@ -288,5 +301,114 @@ function insertFooter()
         </div>
     `
     document.body.appendChild(footer);
+}
+function insertOptionSeason()
+{
+    var list_optionSeason = document.createElement("div");
+    list_optionSeason.classList.add("list_optionSeason");
+
+    list_optionSeason.innerHTML=
+    `
+    <div class="item_optionSeason item_optionSeason-Spring "><i class="fa-solid fa-seedling"></i></div>
+    <div class="item_optionSeason item_optionSeason-Summer "><i class="fas fa-sun"></i></div>
+    <div class="item_optionSeason item_optionSeason-Fall "><i class="fa-brands fa-canadian-maple-leaf"></i></div>
+    <div class="item_optionSeason item_optionSeason-Winter "><i class="fa-solid fa-snowflake"></i></div>
+    <div class="item_optionSeason item_optionSeason-Unset "><i class="fa-solid fa-not-equal"></i></div>
+    `
+    document.body.appendChild(list_optionSeason);
+}
+function changedColorWithSeasonSpring()
+{
+   var footer= document.getElementById("footermua");
+   footer.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "pink" + ', ' + "black" + ')';
+   console.log(footer);
+
+   var header= document.getElementById("headermua");
+   header.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "pink" + ', ' + "black" + ')';
+   console.log(header);
+
+//    var container_login = document.getElementById("container_login");
+//    container_login.style.backgroundImage = 'linear-gradient('
+//    + "to top" + ', ' + "pink" + ', ' + "black" + ')';
+}
+
+function changedColorWithSeasonSummer()
+{
+   var footer= document.getElementById("footermua");
+   footer.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+
+   console.log(footer);
+
+   var header= document.getElementById("headermua");
+   header.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+
+   console.log(header);
+
+//    var container_login = document.getElementById("container_login");
+//    container_login.style.backgroundImage = 'linear-gradient('
+//    + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+}
+
+function changedColorWithSeasonSummer()
+{
+   var footer= document.getElementById("footermua");
+   footer.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+
+   console.log(footer);
+
+   var header= document.getElementById("headermua");
+   header.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+
+   console.log(header);
+
+//    var container_login = document.getElementById("container_login");
+//    container_login.style.backgroundImage = 'linear-gradient('
+//    + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+}
+
+function changedColorWithSeasonFall()
+{
+   var footer= document.getElementById("footermua");
+   footer.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + ColorFall + ', ' + "black" + ')';
+
+   console.log(footer);
+
+   var header= document.getElementById("headermua");
+   header.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + ColorFall + ', ' + "black" + ')';
+
+   console.log(header);
+
+}
+
+function changedColorWithSeasonWinter()
+{
+   var footer= document.getElementById("footermua");
+   footer.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + ColorWinter + ', ' + "black" + ')';
+
+   console.log(footer);
+
+   var header= document.getElementById("headermua");
+   header.style.backgroundImage = 'linear-gradient('
+   + "to top" + ', ' + ColorWinter + ', ' + "black" + ')';
+
+   console.log(header);
+
+}
+function changedColorWithDefault()
+{
+    var header= document.getElementById("headermua");
+    header.style.backgroundImage="unset"
+//    header.style.backgroundColor= "white"
+   var footer= document.getElementById("footermua");
+   footer.style.background="black";
 }
 
