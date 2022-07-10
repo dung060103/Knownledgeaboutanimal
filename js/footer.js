@@ -43,7 +43,7 @@ header.innerHTML=
                 <div class="item_menu have_list"><a href=animal.html" onclick="">Animals</a>
                 </div>
                <div class="item_menu have_list"><a href=legendary_animal.html">Legendary Animals</a></div>
-                <div class="item_menu have_list"><a href=ExtinctAnimal/Coding/Extinct.html">Extinct Animals</a></div>
+                <div class="item_menu have_list"><a href="Extinct.html">Extinct Animals</a></div>
                 <div class="item_menu no_list"><a href=news.html">News</a></div>
                 <div class="item_menu no_list"><a href="javascript:void(0)" onclick="opensignin()">Login</a></div>
                 <div class="item_menu no_list"><a href="contact.html">Contact</a></div>
