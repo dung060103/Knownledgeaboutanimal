@@ -14,7 +14,7 @@ function openT_Rex() {
 
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer src="../Picture_Dinosaur/T-Rex/scene.gltf" alt="VR Headset" auto-rotate camera-controls autoplay ar ios-src="../Picture_Dinosaur/T-Rex/scene.gltf"></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer src="Picture_Dinosaur/T-Rex/scene.gltf" alt="VR Headset" auto-rotate camera-controls autoplay ar ios-src="Picture_Dinosaur/T-Rex/scene.gltf"></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/449011/pexels-photo-449011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
@@ -32,7 +32,7 @@ function openTriceratops() {
 
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="../Picture_Dinosaur/Triceratops/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="Picture_Dinosaur/Triceratops/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/5408006/pexels-photo-5408006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
@@ -49,7 +49,7 @@ function openTriceratops() {
 function openStegosaurus() {
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="../Picture_Dinosaur/Stegosaur/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="Picture_Dinosaur/Stegosaur/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/4813938/pexels-photo-4813938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
@@ -64,7 +64,7 @@ function openSpinosaurus() {
 
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="../Picture_Dinosaur/Spinosaurus/scene.gltf" alt="VR Headset"  ></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="Picture_Dinosaur/Spinosaurus/scene.gltf" alt="VR Headset"  ></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/5594216/pexels-photo-5594216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
@@ -95,7 +95,7 @@ function openIguanodon() {
 function openDiploducus() {
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="../Picture_Dinosaur/Diplodocus/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="Picture_Dinosaur/Diplodocus/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/4612724/pexels-photo-4612724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
@@ -110,7 +110,7 @@ function openDiploducus() {
 function openBranchiosaurus() {
     let openT_Rex = document.getElementById('display_dinosaur');
 
-    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="../Picture_Dinosaur/Brachiosaurus/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
+    openT_Rex.innerHTML = '<model-viewer camera-controls autoplay ar shadow-intensity="1"  src="Picture_Dinosaur/Brachiosaurus/scene.gltf" alt="VR Headset" auto-rotate camera-controls ></model-viewer>' +
         ' <i class="fa-solid fa-circle-xmark" onclick="close_display()"></i>';
     openT_Rex.style.backgroundImage = 'url("https://images.pexels.com/photos/4718366/pexels-photo-4718366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")';
     openT_Rex.style.zIndex = 5;
