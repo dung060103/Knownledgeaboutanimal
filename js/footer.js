@@ -284,7 +284,7 @@ function insertFooter()
             <div class="icon_contact icon_twiter"><i class="fa-brands fa-twitter"></i></div>
         </div>
         <div class="ft_logo">
-            <a href=""><img src="/images/LOGO/logo_team.png" alt=""></a>
+            <a href=""><img src="images/LOGO/logo_team.png" alt=""></a>
         </div>
     `
     document.body.appendChild(footer);
