@@ -37,15 +37,15 @@ header.innerHTML=
                 <!-- <img style="height:100% ; display:none ;" src="images/LOGO/logoweb.png" alt=""> -->
             </div>
             <div class="list_menu">
-                <div class="item_menu no_list"><a href="../../index.html">Home</a></div>
-                <div class="item_menu no_list"><a href="../../overview.html">OverView</a></div>
+                <div class="item_menu no_list"><a href="/index.html">Home</a></div>
+                <div class="item_menu no_list"><a href="/overview.html">OverView</a></div>
                 <div class="item_menu no_list" id="menu3"><a href="javascript:void(0)">Search Animals</a></div>
-                <div class="item_menu have_list"><a href="../../animal.html" onclick="">Animals</a>
+                <div class="item_menu have_list"><a href="/animal.html" onclick="">Animals</a>
                 </div>
-               <div class="item_menu have_list"><a href="../../legendary_animal.html">Legendary Animals</a></div>
-                <div class="item_menu have_list"><a href="../../ExtinctAnimal/Coding/Extinct.html">Extinct Animals</a></div>
-                <div class="item_menu no_list"><a href="../../news.html">News</a></div>
-                <div class="item_menu no_list"><a href="..javascript:void(0)" onclick="opensignin()">Login</a></div>
+               <div class="item_menu have_list"><a href="/legendary_animal.html">Legendary Animals</a></div>
+                <div class="item_menu have_list"><a href="/ExtinctAnimal/Coding/Extinct.html">Extinct Animals</a></div>
+                <div class="item_menu no_list"><a href="/news.html">News</a></div>
+                <div class="item_menu no_list"><a href="javascript:void(0)" onclick="opensignin()">Login</a></div>
                 <div class="item_menu no_list"><a href="../../contact.html">Contact</a></div>
             </div>
         </div>
