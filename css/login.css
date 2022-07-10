@@ -28,6 +28,7 @@ hr{
 
 body{
     font-family: monospace;
+    width: 100% !important;
 }
 
 /* Header */
@@ -630,7 +631,7 @@ a{
 
 
 /*************/
-#content{
+#content_login{
     width: 100% !important;
     
     display: none;
@@ -650,7 +651,7 @@ a{
     animation-duration: 0.5s; 
     background-color: rgba(44, 49, 44, 0.5);
 }
-#container{
+#container_login{
    
     width: 40%;
     height: 600px;
@@ -835,7 +836,7 @@ form.sign-up{
 }
 
 @media (max-width: 779px) {
-    #container{
+    #container_login{
         margin-top: 60px;
         width: 100vw;
         height: auto;

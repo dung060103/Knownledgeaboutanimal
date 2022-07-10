@@ -1,249 +1,58 @@
-
-.title{
-    color: black;
-    font-size: 23px;
-    text-align: center;
-}
-.title:hover{
-    /* color: #777; */
-    color: #262626;
-    transition: 1s;
-}
-
-body{
-    background-image: url(/Animal/picture/Forest.jpg);
-
-}
-
-
-.container{
-    width: 100%;
-    min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    /* background: black; */
-    /* margin: 0 auto; */
-}
-
-.card{
-    position: relative;
-    width: calc(50% - 20px);
-    min-height: 300px;
-    background: #fff;
-    margin: 10px;
-    box-sizing: border-box;
-    /* border-radius: 10px; */
-    box-shadow: 0 0 3px 1px #777;
-}
-.card:hover{
-    transform: scale(1.03);
-    transition: 0.5s ease-in-out;
-}
-.card .imgBx{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-}
-
-.card .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .detail{
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
+#content{
+    width: 100% ;
+    margin-left: -6px;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 3000;
+    position: absolute;
+    top: 0;
+    bottom: 40%;
+    position: none;
+    /* overflow-y: hidden; */
+    min-height:100%;
+    position:fixed;
+    animation-name: hieuunghien;
+    animation-duration: 0.5s; 
+    background-color: rgba(44, 49, 44, 0.5);
+    transition: 1s;
 }
-
-.card .detail .cont{
-    padding: 20px;
-    box-sizing: border-box;
-    width: 90%;
-    height: 80%;
-}
-
-
-
-.card .detail .cont h2{
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    line-height: 0.85em;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: green;
-}
-
-.card .detail .cont h2 i{
-    color: green;
-}
-
-.card .detail .cont a{
-    margin-top: 20px;
-    font-size: 16px;
-    color: #777; 
-    text-decoration: none;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.card:hover .detail .cont a{
-    color: brown;
-}
-.card .detail .cont i{
-    color: #777;
-    margin-right: 5px;
-}
-
-/* .card .detail .cont a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border: 2px solid #262626;
-    color: #262626;
-    font-weight: 500;
-    margin-left: 40px ;
-} */
-.card .detail .cont a:hover{
-    background: #262626;
-    color: #fff;
-}
-
-.card .detail .cont .btn2 a{
-    padding: 10px;
-    border: 2px solid rgb(0, 0, 0) ;
-    color: #262626;
-} 
-.card .detail .cont .btn2 a:hover{
-    color: #fff;
-    background: #262626;
-    transition: 0.5s;
-    /* border: 2px solid rgb(255, 255, 255) ; */
-}
-.card .detail .cont .btn2{
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.5s;
-    margin-top: 30px;
-}
-.card:hover .detail .cont .btn2{
-    opacity: 1;
-    transform: translateY(0px);
-    transition: 0.5s;
-}
-@media (max-width:1200px){
-      .container{
-        width: 100%;
-      }
-}   
-@media (max-width:990px){
-    .card{
-        width: calc(70% - 20px);
-        margin: 10px auto;
-    }
-}
-
-@media (max-width:770px){
-    .card{
-        width: calc(70% - 20px);
-        margin: 10px auto;
-    }
-    .card .imgBx{
-        position: relative;
-        width: 100%;
-        height: 200px;
-    }
-    .card .detail{
-        position: relative;
-        width: 100%;
-        height: 260px;
-    }
-}
-
-@media (max-width:480px){
-    .card{
-        width: calc(100% - 20px);
-        margin: 10px auto;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#content{
-    width: 100% !important;
-    /* margin-left: -10px; */
-    padding: 0;
-     display: none;
-     justify-content: center;
-     align-items: center;
-     z-index: 3000;
-     position: absolute;
-     top: 0;
-     bottom: 40%;
-     position: none;
-     /* margin: 0 auto; */
-         min-height:100%;
-         position:fixed;
-         overflow-y:scroll;
-         overflow-x:hidden;
-   
-     /* opacity: 0.5; */
-     animation-name: hieuunghien;
-     animation-duration: 0.5s; 
-     background-color: rgba(44, 49, 44, 0.5);
- }
  #container{
     
      width: 90%;
      height: auto;
+     height: 550px;
      background: white;
-     box-shadow: 0  0 10px #000;
-     
+     box-shadow: 0 0 10px #000;
      align-items: center;
      align-content: center;
      border-radius: 10px;
-     display: none;
+     /* display: none; */
      top: 50%;
      transition: 2s;
      z-index: 4000;
-    
+    overflow: hidden;
+    /* background-image: url(../Animal/picture/forest1.jpg); */
  }
+
+#container .media{
+    /* float: left; */
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+#container .media i{
+    margin: 5px;
+    padding: 5px;
+    font-size: 19px;
+    position: relative;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
  @keyframes hieuunghien{
      from {
          top: -80px;
@@ -264,7 +73,7 @@ body{
  }
  #exit{
      font-size: 30px;
-     margin-top: 10px;
+     margin-top: 20px;
      margin-left: 94%;
      cursor: pointer;                              
  }
@@ -287,53 +96,8 @@ body{
   .btn:hover{
      background: rgb(65, 204, 204);
  }
- .social-text{
-     margin: 10px 0;
-     font-size: 19px;
-     font-weight: 600;
- }
- .social-media{
-     display: flex;
-     justify-content: center;
- }
- .social-icon{
-     height: 45px;
-     width: 45px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: #444;
-     border: 1px solid #444;
-     border-radius: 50px;
-     margin: 0  5px;
- }
- .account-text{
-     font-size: 15px;
- }
- .account-text a{
-     cursor: pointer;
- }
- .account-text a:hover{
-     color: aqua;
-     transition: 1s;
- }
- a{
-     text-decoration: none;
- }
+
  
- .social-icon:hover{
-     color: aqua;
-     border-color: aqua;
- }
- form.sign-up{
-     opacity: 1;
-     transition: 0.5s ease-in-out;
-     transition-delay: 1s;
-     margin-left: 15px;
-     display: none;
-     animation-name: hieuung;
-     animation-duration: 1s;
- }
  
  @media (max-width: 779px) {
      #container{
@@ -344,17 +108,32 @@ body{
      
  }
  
- 
+
+.contai{
+    height: 500px;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+} 
  
  
  
  .container-1{
-    margin: 0 auto;
-    width: 95%;
+    margin: 20px auto;
+    width: 90%;
     justify-content: center;
     display: grid;
+    /* overflow-y: scroll;   */
+
     grid-template-columns: repeat(2, 1fr);
 }
+
+
+
+
+
+
+
+
 
 
 /* .slide-show{
@@ -388,50 +167,66 @@ body{
     top: 40%;
     padding-left: 20px;
     z-index: 1999; 
-} */
+} */    
 
 /* .dieuhuong i:last-child{
     position: relative;
     left: 640%;
 }  */
 .container-1 .slide-show{
-    overflow-y: auto;
-    height: 500px;
-    margin-top: 35px;
-}
-.container-1 .anhlon img{
-    width: 100%;
+    /* overflow-y: auto; */
+    height: auto;
+    /* margin-top: 35px; */
 }
 
-.container-1 .anhnho img{
-    width: 30%;
-}
+figure.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    /* height: 400px; */
+    height: auto;
+    overflow: hidden;
+    cursor: zoom-in;
+    margin-left: -20px;
+  }
+  
+  figure.zoom img:hover {
+    opacity: 0;
+  }
+  
+  figure.zoom img{
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
 
 .right-left{
-    margin-left: 70px;
     margin-top: 30px;
-    overflow-y: scroll;
-    margin-bottom: 20px;
-    height: 460px;
+    height: 400px;
 }
 .right-left i{
     margin-right: 10px;
 }
 .right-left .animal-name{
-    color: green;
+    /* color: green; */
     font-size: 20px;
 }
-.right-left .animal-type a{
-    margin-top: -10px;
-    font-size: 20px;
-    color: rgb(228, 81, 81);
-    text-decoration: none;
+
+.right-left .type table{
+    margin: auto 20px;
 }
-.right-left .animal-type a:hover{
-    color: rgb(243, 235, 235);
-    text-decoration: underline;
-    background-color: rgb(59, 57, 57);
+
+.right-left .type table tr th{
+    border-right: 3px solid #000;
+    width: 80px;
+    background: #444;
+    color: #fff;
+}
+
+.right-left .type table tr td{
+    background: rgb(148, 105, 105);
 }
 
 .right-left hr{
@@ -446,48 +241,156 @@ body{
 }
 
 .right-left .lala{
-    display: grid;
+    /* display: grid; */
     font-size: 18px;
-    grid-template-columns: repeat(2,1fr);
-}
-.right-left .lala span{
-    color: rgb(40, 80, 7);
-    font-size: 22px;
-    font-weight: 600;
-}
-.right-left .lala span::after{
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: #000;
-    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
 }
 
-.right-left .enemy{
-    margin-top: -20px;
-    font-size: 20px;
-    color: red;
+.lala table{
+    margin: 40px 0;
+    width: 100%;
 }
 
-.right-left .enemy span{
-    font-weight: 700;
-}
-
-.right-left .features h3{
-    color: crimson;
-}
-
-.right-left .features .feature-title{
-    font-size: 20px;
-    border: 2px solid black;
+.lala table th{
+    /* border: 1px solid black; */
+    border-bottom: 2px solid #000;
     padding: 10px;
+}
+
+.lala table tr:nth-child(4) th{
+    border-bottom: none;
+}
+
+.lala table tr th:first-child{
+    color: #fff;
+    background: #444;
+    font-size: 15px;
+}
+
+.lala table tr th:last-child{
+    color: #fff;
+    background: rgb(134, 110, 110);
+    font-size: 15px;
+}
+
+.features h3{
+    text-align: center;
+}
+
+
+.features{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.features .table table{
+    margin: 0 auto;
+}
+
+.features .table table tr th{
+    width: 20%;
+    cursor: pointer;
+    height: 40px;
+    border: 2px solid #000;
+}
+
+.features .table table tr th:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.features .similar .species-animal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.features .similar h2{
+    text-align: center;
+}
+
+.features .similar .species-animal .card-2 {
+    width: 300px;
+    height: auto;
+    /* margin-left: 20px; */
+    margin: 20px auto;
+    border: 2px solid #000;
     border-radius: 10px;
+}
+
+.features .similar .species-animal .card-2 .img{
+    /* position: relative; */
+    overflow: hidden;   
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    /* border-bottom: 2px solid #000; */
+    /* box-sizing: border-box; */
+}
+
+
+.features .similar .species-animal .card-2 .img img{
+    position: relative;
+    width: 100%;
+    transition: 0.5s;
+    /* overflow: hidden; */
+}
+
+.features .similar .species-animal .card-2:hover .img img{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.features .similar .species-animal .card-2 .detail-content{
+    text-align: center;
+}
+
+.similar{
+    display: none;
+}
+
+.introduce .intro-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map{
+    height: 400px;
+    display: none;
+}
+
+.taxonomy{
+    display: none;
+    height: 200px;
+    width: 100%;
+}
+
+.taxonomy{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.taxonomy table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+
+.taxonomy table tr th, .taxonomy table tr td {
+    padding: 5px 20px;
+}
+
+.taxonomy table tr th{
+    background: #444;
+    color: #fff;
 }
 
 
 @media(max-width:1200px){
     #content .container-1{
-        margin-top: 200px;
+        /* margin-top: 200px; */
         display: grid;
         grid-template-columns: repeat(1, 1fr) !important;
     }
@@ -498,11 +401,26 @@ body{
     .right-left{
         margin-left: 5px;
         margin-top: 10px;
+        text-align: center;
     }
     .right-left .features .feature-title{
         margin: 0 !important;
         padding: 0 !important;
     }
+    figure.zoom {
+        margin: 0 auto;
+    }
+
+    .right-left .type table{    
+        margin: 0 auto;
+    }
+    
+    #container{
+        width: 90%;
+    }
 }
 
-/****************************************/ 
+
+    @media (max-width:800px){
+        
+    }

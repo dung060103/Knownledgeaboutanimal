@@ -1,3 +1,12 @@
+
+window.addEventListener("readystatechange", function()
+{
+    var content_login = document.getElementById("content");
+    content_login.id="content_login"
+    var container_login = document.getElementById("container");
+    container_login.id="container_login"
+
+})
 // const btnham = document.querySelector('.ham-btn');
 // const bttimes = document.querySelector('.times-btn');
 // const navbar = document.getElementById('nav-bar');
@@ -46,7 +55,7 @@ function ischarkey(e){
 function signupToggle(){
     // var conta = document.querySelector('.container');
     // conta.classList.add('.active');
-    var popup = document.querySelector('.container');
+    var popup = document.querySelector('.content_login');
     popup.classList.add('.active');  
 }
 
@@ -56,11 +65,11 @@ function signupToggle(){
 
 
 function opensignin(){
-   document.getElementById('content').style.display = 'flex';
-   document.getElementById('container').style.display = 'block';
+   document.getElementById('content_login').style.display = 'flex';
+   document.getElementById('container_login').style.display = 'block';
 };
-function exit(){
-document.getElementById('content').style.display = 'none';
+function exit_login(){
+document.getElementById('content_login').style.display = 'none';
 }
 
 function opensignoutclosesignin(){

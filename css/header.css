@@ -67,7 +67,7 @@ header
     position: fixed;
     top: 0;
     left: unset;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -75,10 +75,7 @@ header
     /* background-image: linear-gradient(rgba(157, 240, 246, 0.715), rgba(3, 230, 255, 0.655)); */
 }
 .header
-{
-width: 100vw;
-/* position: relative; */
-}
+{width: 100%;/* position: relative; */}
 .container_logo_brand
 {
     display: flex;
@@ -92,7 +89,7 @@ width: 100vw;
     display: none;
     height: max-content;
     width: max-content;
-    left: 10px; 
+    left: 10px;
     margin: 10px;
     cursor: pointer;
     box-sizing: border-box;
@@ -131,7 +128,7 @@ width: 100vw;
     font-weight: bold;
     font-style: italic;
     margin: 20px 0;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
@@ -168,6 +165,7 @@ width: 100vw;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    box-sizing: border-box;
 }
 /*
 .item_menu.have_list::after
@@ -402,8 +400,7 @@ width: 100vw;
     /* display: none; */
     /* position: relative; */
     top: 122px;
-    width: 100vw;
-    
+    width: 100%;
     background-color: #fff;
     /* transition-delay: 1s; */
     background-color: #fff;

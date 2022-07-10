@@ -7,11 +7,11 @@ window.addEventListener('load',function ()
     new_imgLOGO.src="images/LOGO/logoweb.png";
     new_imgLOGO.style.display='none';
     var div_login = this.document.createElement('div');
-    div_login.id='content';
+    div_login.id='content_login';
 div_login.innerHTML=
 `
-<div id="container" class="animate__backInDown">
-                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
+<div id="container_login" class="animate__backInDown">
+                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit_login()"></i>
                 <form action="" class="sign-in" id="signin" align="center">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">

@@ -176,7 +176,7 @@ footer.hide
 .ft_list_option
 {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
     color: white;
     font-family: monospace;
