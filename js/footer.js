@@ -1,44 +1,78 @@
-insertHeader()
-insertFooter()
-insertOptionSeason()
-var ColorFall="#fec594"
-var ColorWinter = "#4b79ab"
-window.addEventListener('load',function()
+insertHeader();
+insertFooter();
+insertOptionSeason();
+var ColorFall = "#fec594";
+var ColorWinter = "#4b79ab";
+if(JSON.parse(window.localStorage.getItem("CodeOptionSeason"))==null)
 {
-    document.querySelector('.icon_phone').addEventListener('mouseenter',function()
-    {
-        document.querySelector('.number_phone').classList.add('is-active');
-    });
-    document.querySelector('.icon_phone').addEventListener('mouseleave',function()
-    {
-        document.querySelector('.number_phone.is-active').classList.remove('is-active');
-    });
-    document.querySelector('.icon_map').addEventListener('mouseenter',function()
-    {
-        document.querySelector('.text_map').classList.add('is-active');
-    });
-    document.querySelector('.icon_map').addEventListener('mouseleave',function()
-    {
-        document.querySelector('.text_map.is-active').classList.remove('is-active');
-    });
-    var item_optionSeasonSpring = document.querySelector(".item_optionSeason-Spring");
-    item_optionSeasonSpring.addEventListener("click", changedColorWithSeasonSpring);
-    var item_optionSeasonSummer = document.querySelector(".item_optionSeason-Summer");
-    item_optionSeasonSummer.addEventListener("click", changedColorWithSeasonSummer)
-    var item_optionSeasonFall = document.querySelector(".item_optionSeason-Fall");
-    item_optionSeasonFall.addEventListener("click", changedColorWithSeasonFall)
-    var item_optionSeasonWinter = document.querySelector(".item_optionSeason-Winter");
-    item_optionSeasonWinter.addEventListener("click", changedColorWithSeasonWinter)
-    var item_optionSeasonUnset = document.querySelector(".item_optionSeason-Unset");
-    item_optionSeasonUnset.addEventListener("click", changedColorWithDefault)
-})
+    var CodeOptionSeason = {
+        code: "0"
+    }
+    window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+}
+window.addEventListener("load", function () {
+    console.log(JSON.parse(window.localStorage.getItem("CodeOptionSeason")));
 
-function insertHeader()
-{
-var header = document.createElement("header")
-header.id="headermua"
-header.innerHTML=
-`
+    loadOptionSeason(JSON.parse(window.localStorage.getItem("CodeOptionSeason")).code)
+
+
+  document
+    .querySelector(".icon_phone")
+    .addEventListener("mouseenter", function () {
+      document.querySelector(".number_phone").classList.add("is-active");
+    });
+  document
+    .querySelector(".icon_phone")
+    .addEventListener("mouseleave", function () {
+      document
+        .querySelector(".number_phone.is-active")
+        .classList.remove("is-active");
+    });
+  document
+    .querySelector(".icon_map")
+    .addEventListener("mouseenter", function () {
+      document.querySelector(".text_map").classList.add("is-active");
+    });
+  document
+    .querySelector(".icon_map")
+    .addEventListener("mouseleave", function () {
+      document
+        .querySelector(".text_map.is-active")
+        .classList.remove("is-active");
+    });
+  var item_optionSeasonSpring = document.querySelector(
+    ".item_optionSeason-Spring"
+  );
+  item_optionSeasonSpring.addEventListener(
+    "click",
+    changedColorWithSeasonSpring
+  );
+  var item_optionSeasonSummer = document.querySelector(
+    ".item_optionSeason-Summer"
+  );
+  item_optionSeasonSummer.addEventListener(
+    "click",
+    changedColorWithSeasonSummer
+  );
+  var item_optionSeasonFall = document.querySelector(".item_optionSeason-Fall");
+  item_optionSeasonFall.addEventListener("click", changedColorWithSeasonFall);
+  var item_optionSeasonWinter = document.querySelector(
+    ".item_optionSeason-Winter"
+  );
+  item_optionSeasonWinter.addEventListener(
+    "click",
+    changedColorWithSeasonWinter
+  );
+  var item_optionSeasonUnset = document.querySelector(
+    ".item_optionSeason-Unset"
+  );
+  item_optionSeasonUnset.addEventListener("click", changedColorWithDefault);
+});
+
+function insertHeader() {
+  var header = document.createElement("header");
+  header.id = "headermua";
+  header.innerHTML = `
 <div class="header">
             <div class="container_logo_brand">
                 <!-- <img class="logo_brand" src="images/Knowledge about Animal_unscreen.png" alt=""> -->
@@ -217,15 +251,13 @@ header.innerHTML=
                 </div>
             </div>
         </div>
-`
-document.body.appendChild(header);
+`;
+  document.body.appendChild(header);
 }
-function insertFooter()
-{
-    var footer = document.createElement("footer");
-    footer.id="footermua"
-    footer.innerHTML=
-    `
+function insertFooter() {
+  var footer = document.createElement("footer");
+  footer.id = "footermua";
+  footer.innerHTML = `
     <div class="ft_list_option">
             <div class="item_option"><a href="animallegenf/test.html">About</a></div>
             <div class="item_option"><a href="">Contact Us</a> </div>
@@ -299,116 +331,113 @@ function insertFooter()
         <div class="ft_logo">
             <a href=""><img src="images/LOGO/logo_team.png" alt=""></a>
         </div>
-    `
-    document.body.appendChild(footer);
+    `;
+  document.body.appendChild(footer);
 }
-function insertOptionSeason()
-{
-    var list_optionSeason = document.createElement("div");
-    list_optionSeason.classList.add("list_optionSeason");
+function insertOptionSeason() {
+  var list_optionSeason = document.createElement("div");
+  list_optionSeason.classList.add("list_optionSeason");
 
-    list_optionSeason.innerHTML=
-    `
+  list_optionSeason.innerHTML = `
     <div class="item_optionSeason item_optionSeason-Spring "><i class="fa-solid fa-seedling"></i></div>
     <div class="item_optionSeason item_optionSeason-Summer "><i class="fas fa-sun"></i></div>
     <div class="item_optionSeason item_optionSeason-Fall "><i class="fa-brands fa-canadian-maple-leaf"></i></div>
     <div class="item_optionSeason item_optionSeason-Winter "><i class="fa-solid fa-snowflake"></i></div>
     <div class="item_optionSeason item_optionSeason-Unset "><i class="fa-solid fa-not-equal"></i></div>
-    `
-    document.body.appendChild(list_optionSeason);
+    `;
+  document.body.appendChild(list_optionSeason);
 }
-function changedColorWithSeasonSpring()
-{
-   var footer= document.getElementById("footermua");
-   footer.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "pink" + ', ' + "black" + ')';
-   console.log(footer);
-
-   var header= document.getElementById("headermua");
-   header.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "pink" + ', ' + "black" + ')';
-   console.log(header);
-
-//    var container_login = document.getElementById("container_login");
-//    container_login.style.backgroundImage = 'linear-gradient('
-//    + "to top" + ', ' + "pink" + ', ' + "black" + ')';
+function changedColorWithSeasonSpring() {
+    loadOptionSeason("1")
 }
 
-function changedColorWithSeasonSummer()
-{
-   var footer= document.getElementById("footermua");
-   footer.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
-
-   console.log(footer);
-
-   var header= document.getElementById("headermua");
-   header.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
-
-   console.log(header);
-
-//    var container_login = document.getElementById("container_login");
-//    container_login.style.backgroundImage = 'linear-gradient('
-//    + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
+function changedColorWithSeasonSummer() {
+    loadOptionSeason("2")
 }
 
-function changedColorWithSeasonSummer()
-{
-   var footer= document.getElementById("footermua");
-   footer.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
 
-   console.log(footer);
-
-   var header= document.getElementById("headermua");
-   header.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
-
-   console.log(header);
-
-//    var container_login = document.getElementById("container_login");
-//    container_login.style.backgroundImage = 'linear-gradient('
-//    + "to top" + ', ' + "yellow" + ', ' + "black" + ')';
-}
-
-function changedColorWithSeasonFall()
-{
-   var footer= document.getElementById("footermua");
-   footer.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + ColorFall + ', ' + "black" + ')';
-
-   console.log(footer);
-
-   var header= document.getElementById("headermua");
-   header.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + ColorFall + ', ' + "black" + ')';
-
-   console.log(header);
+function changedColorWithSeasonFall() {
+loadOptionSeason("3")
 
 }
 
-function changedColorWithSeasonWinter()
-{
-   var footer= document.getElementById("footermua");
-   footer.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + ColorWinter + ', ' + "black" + ')';
-
-   console.log(footer);
-
-   var header= document.getElementById("headermua");
-   header.style.backgroundImage = 'linear-gradient('
-   + "to top" + ', ' + ColorWinter + ', ' + "black" + ')';
-
-   console.log(header);
+function changedColorWithSeasonWinter() {
+loadOptionSeason("4")
 
 }
-function changedColorWithDefault()
-{
-    var header= document.getElementById("headermua");
-    header.style.backgroundImage="unset"
-//    header.style.backgroundColor= "white"
-   var footer= document.getElementById("footermua");
-   footer.style.background="black";
+function changedColorWithDefault() {
+loadOptionSeason("0")
 }
+function loadOptionSeason(Code) {
+  switch (Code) {
+    case "1":
+        {
+            var footer = document.getElementById("footermua");
+            footer.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + "pink" + ", " + "black" + ")";
+            var header = document.getElementById("headermua");
+            header.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + "pink" + ", " + "black" + ")";
+              console.log(JSON.parse(window.localStorage.getItem("CodeOptionSeason")).code)
+              var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
+                    CodeOptionSeason.code="1";
+                  window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+              console.log(JSON.parse(window.localStorage.getItem("CodeOptionSeason")).code)
+        }
+      break;
+    case "2":
+        {
+            var footer = document.getElementById("footermua");
+            footer.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + "yellow" + ", " + "black" + ")";
+            var header = document.getElementById("headermua");
+            header.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + "yellow" + ", " + "black" + ")";
+              var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
+              CodeOptionSeason.code="2";
+            window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+        }
+      break;
+    case "3":
+        {
+            var footer = document.getElementById("footermua");
+            footer.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + ColorFall + ", " + "black" + ")";
+            var header = document.getElementById("headermua");
+            header.style.backgroundImage =
+              "linear-gradient(" + "to top" + ", " + ColorFall + ", " + "black" + ")";
+              var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
+              CodeOptionSeason.code="3";
+            window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+        }
+      break;
+    case "4":
+        {
 
+              var footer = document.getElementById("footermua");
+              footer.style.backgroundImage =
+                "linear-gradient(" + "to top" + ", " + ColorWinter + ", " + "black" + ")";
+              var header = document.getElementById("headermua");
+              header.style.backgroundImage =
+                "linear-gradient(" + "to top" + ", " + ColorWinter + ", " + "black" + ")";
+                var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
+                CodeOptionSeason.code="4";
+              window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+        }
+      break;
+    case "0":
+        {
+            var header = document.getElementById("headermua");
+            header.style.backgroundImage = "unset";
+            //    header.style.backgroundColor= "white"
+            var footer = document.getElementById("footermua");
+            footer.style.background = "black";
+            var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
+            CodeOptionSeason.code="0";
+          window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));
+        }
+      break;
+    default:
+      break;
+  }
+}
