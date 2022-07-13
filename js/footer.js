@@ -259,7 +259,7 @@ function insertFooter() {
   footer.id = "footermua";
   footer.innerHTML = `
     <div class="ft_list_option">
-            <div class="item_option"><a href="animallegenf/test.html">About</a></div>
+            <div class="item_option"><a href="test.html">About</a></div>
             <div class="item_option"><a href="">Contact Us</a> </div>
             <div class="item_option"><a href="">Privacy</a></div>
             <div class="item_option"><a href="">Terms</a></div>
@@ -431,7 +431,8 @@ function loadOptionSeason(Code) {
             header.style.backgroundImage = "unset";
             //    header.style.backgroundColor= "white"
             var footer = document.getElementById("footermua");
-            footer.style.background = "black";
+            // footer.style.background = "black";
+            footer.style.backgroundImage = "unset";
             var CodeOptionSeason = JSON.parse(window.localStorage.getItem("CodeOptionSeason"));
             CodeOptionSeason.code="0";
           window.localStorage.setItem("CodeOptionSeason", JSON.stringify(CodeOptionSeason));

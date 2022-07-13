@@ -22,7 +22,7 @@ div_login.innerHTML=
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password">
                     </div>
-                    <input type="submit" value="Login" class="btn">
+                    <input type="submit" value="Login" class="btn_login">
                     <p class="social-text">Or Sign in with social platform</p>
                     <div class="social-media">
                         <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>

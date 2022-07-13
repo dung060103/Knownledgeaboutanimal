@@ -12,51 +12,48 @@ body{
 
 
 .btn-1{
-    background-image: url(../animallegenf/pic/spring7.gif);
+    background-image: url(pic/spring7.gif);
     color: rgb(176, 30, 30);
     background-position: 0;
 }
 
 .btn-2{
-    background-image: url(../animallegenf/pic/spring3.gif);
+    background-image: url(pic/spring3.gif);
     color: rgb(108, 108, 108);
 }
 .btn-3{
-    background-image: url(../animallegenf/pic/autumn2.gif);
+    background-image: url(pic/autumn2.gif);
     background-position: 0;
     color: rgb(255, 251, 8);
 }
 
 .btn-4{
-    background-image: url(../animallegenf/pic/winter2.gif);
+    background-image: url(pic/winter2.gif);
     
 }
 
 .spring{
-    background-image: url(../animallegenf/pic/spring1.gif);
+    background-image: url(pic/spring1.gif);
     
     /* background-repeat: no-repeat; */
     animation: chay 0.5s;
-
 }
 
 .summer{
-    background-image: url(../animallegenf/pic/summer2.gif);
+    background-image: url(pic/summer2.gif);
     display: none;
     /* background-repeat: no-repeat; */
     animation: chay 0.5s;
-
 }
 
 .autumn{
-    background-image: url(../animallegenf/pic/autumn6.gif);
+    background-image: url(pic/autumn6.gif);
     display: none;
-    animation: chay 0.5s;
-    
+    animation: chay 0.5s;  
 }
 
 .winter{
-    background-image: url(../animallegenf/pic/winter5.gif);
+    background-image: url(pic/winter5.gif);
     display: none;
     /* background-repeat: no-repeat; */
     animation: chay 0.5s;
